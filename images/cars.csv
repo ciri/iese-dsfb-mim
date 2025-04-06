@@ -1,0 +1,592 @@
+﻿introduction,group,brand,model_name,length,width,height,curb_weight,total_max_power_hp,price
+2007,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo 147,4223,1729,1442,1185,105,21950
+2008,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo 159,4661,1830,1422,1360,140,28450
+2013,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo 4C,3990,1868,1184,895,240,75360
+2008,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo 8C,4381,1894,1341,1560,450,220000
+2009,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo Brera,4413,1830,1372,1420,200,40950
+2005,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo Crosswagon,4441,1765,1497,1505,150,38855
+2007,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo GT,4489,1763,1362,1265,140,30495
+2020,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo Giulia,4643,1860,1436,1404,200,44170
+2014,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo Giulietta,4351,1798,1465,1255,105,23450
+2011,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo MiTo,4065,1721,1434,1055,70,16450
+2016,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo Mito,4063,1720,1453,1055,78,17950
+2020,Fiat Chrysler Automobiles,Alfa Romeo,Alfa Romeo Stelvio,4687,1903,1671,1635,200,63335
+2011,Independent,Aston Martin,Aston Martin Cygnet,3078,1680,1500,988,98,41063
+2018,Independent,Aston Martin,Aston Martin DB11,4739,1940,1279,1870,510,262908
+2012,Independent,Aston Martin,Aston Martin DB9,4720,1875,1282,1785,517,258501
+2008,Independent,Aston Martin,Aston Martin DBS,4721,1905,1280,1695,517,365291
+2010,Independent,Aston Martin,Aston Martin Rapide,5019,1875,1360,1965,476,270234
+2001,Independent,Aston Martin,Aston Martin V12,4665,1925,1320,1780,457,332875
+2012,Independent,Aston Martin,Aston Martin Vanquish,4720,1905,1295,1785,573,322018
+2018,Independent,Aston Martin,Aston Martin Vantage,4465,1942,1273,1530,510,211000
+2012,Independent,Aston Martin,Aston Martin Virage,4720,1905,1280,1785,497,278785
+2015,Volkswagen Group,Audi,Audi A1,3973,1740,1416,1010,95,20190
+2016,Volkswagen Group,Audi,Audi A3,4241,1777,1424,1125,115,26680
+2015,Volkswagen Group,Audi,Audi A4,4726,1842,1427,1295,150,38540
+2011,Volkswagen Group,Audi,Audi A5,4626,1854,1383,1595,170,48540
+2015,Volkswagen Group,Audi,Audi A7,4974,1911,1420,1605,190,57890
+2012,Volkswagen Group,Audi,Audi A8,5137,1949,1460,1845,245,91090
+2017,Volkswagen Group,Audi,Audi Q2,4191,1794,1508,1180,116,31210
+2013,Volkswagen Group,Audi,Audi Q3,4385,1831,1590,1360,150,36430
+2013,Volkswagen Group,Audi,Audi Q5,4629,1898,1655,1705,180,55070
+2010,Volkswagen Group,Audi,Audi Q7,5089,1983,1737,2220,272,99710
+2020,Volkswagen Group,Audi,Audi Q8,4986,1995,1701,2405,381,93640
+2012,Volkswagen Group,Audi,Audi R8,4440,1904,1252,1535,430,200220
+2017,Volkswagen Group,Audi,Audi RS3,4479,1802,1397,1510,400,86480
+2005,Volkswagen Group,Audi,Audi RS4,4589,1816,1415,1650,420,107440
+2013,Volkswagen Group,Audi,Audi RS5,4649,1860,1380,1895,450,144910
+2008,Volkswagen Group,Audi,Audi RS6,4928,1889,1456,1985,580,170250
+2015,Volkswagen Group,Audi,Audi RS7,5012,1911,1419,1905,560,173430
+2015,Volkswagen Group,Audi,Audi S1,3975,1740,1417,1290,231,45020
+2006,Volkswagen Group,Audi,Audi S3,4215,1765,1399,1455,265,49395
+2016,Volkswagen Group,Audi,Audi S4,4745,1842,1404,1605,354,82380
+2017,Volkswagen Group,Audi,Audi S5,4692,1846,1382,1815,354,94740
+2014,Volkswagen Group,Audi,Audi S6,4931,1874,1468,1870,450,127050
+2014,Volkswagen Group,Audi,Audi S7,4981,1911,1398,1930,450,140850
+2020,Volkswagen Group,Audi,Audi S8,5179,1945,1474,2205,571,182740
+2003,Volkswagen Group,Audi,Audi TT,4041,1764,1346,1280,150,37790
+2019,Volkswagen Group,Audi,Audi e-tron,4901,1935,1616,2370,313,70450
+2012,BMW,BMW,BMW 114i,4324,1765,1421,1265,102,25990
+2020,BMW,BMW,BMW 116i,4319,1799,1434,1295,109,29989
+2011,BMW,BMW,BMW 118i,4360,1748,1411,1395,143,36990
+2011,BMW,BMW,BMW 120i,4360,1748,1423,1275,170,36990
+2018,BMW,BMW,BMW 216i,4354,1800,1555,1325,109,32940
+2017,BMW,BMW,BMW 218i,4432,1774,1413,1475,136,47070
+2012,BMW,BMW,BMW 316i,4624,1811,1429,1360,136,33700
+2003,BMW,BMW,BMW 316ti,4262,1751,1408,1275,115,24900
+2003,BMW,BMW,BMW 318Ci,4488,1757,1369,1295,143,38250
+2020,BMW,BMW,BMW 318i,4709,1827,1435,1445,156,41226
+2010,BMW,BMW,BMW 320i,4612,1782,1384,1570,170,51000
+2017,BMW,BMW,BMW 418i,4640,1825,1377,1405,136,41093
+2017,BMW,BMW,BMW 420i,4640,1825,1384,1675,184,57433
+2020,BMW,BMW,BMW 520i,4963,1868,1479,1585,184,57316
+2005,BMW,BMW,BMW 523i,4843,1846,1491,1535,177,53700
+2013,BMW,BMW,BMW 535i,5004,1901,1559,1915,306,89122
+2007,BMW,BMW,BMW 630i,4820,1855,1374,1505,272,89365
+2015,BMW,BMW,BMW 640i,4894,1894,1365,1795,320,112168
+2005,BMW,BMW,BMW 730i,5039,1902,1491,1780,258,92550
+2019,BMW,BMW,BMW 740i,5098,1902,1478,1735,340,115533
+2019,BMW,BMW,BMW 840i,4843,1902,1339,1805,340,120141
+2019,BMW,BMW,BMW X1,4447,1821,1598,1375,140,42404
+2018,BMW,BMW,BMW X2,4360,1824,1526,1375,140,43347
+2005,BMW,BMW,BMW X3,4565,1853,1674,1630,150,44985
+2018,BMW,BMW,BMW X4,4752,1918,1621,1695,184,60707
+2003,BMW,BMW,BMW X5,4667,1872,1715,1970,231,66100
+2014,BMW,BMW,BMW X6,4909,1989,1702,2000,306,99421
+2019,BMW,BMW,BMW X7,5151,2000,1805,2295,340,129426
+2006,BMW,BMW,BMW Z4,4091,1781,1268,1295,265,57000
+2013,BMW,BMW,BMW i3,3999,1775,1578,1170,170,35835
+2018,BMW,BMW,BMW i8,4689,1942,1293,1510,374,149927
+2020,BMW,BMW,BMW iX3,4734,1891,1668,2160,286,66048
+2018,Volkswagen Group,Bentley,Bentley Bentayga,5140,1998,1742,2288,550,232776
+2005,Volkswagen Group,Bentley,Bentley Continental,5307,1916,1479,2475,560,303002
+2014,Volkswagen Group,Bentley,Bentley Flying,5299,1976,1488,2325,507,241260
+2017,Volkswagen Group,Bentley,Bentley Mulsanne,5575,1926,1521,2585,512,398300
+2013,General Motors,Cadillac,Cadillac ATS,4644,1805,1427,1559,276,52490
+2006,General Motors,Cadillac,Cadillac BLS,4680,1752,1471,1460,175,37420
+2017,General Motors,Cadillac,Cadillac CT6,5184,1880,1472,1879,417,112980
+2015,General Motors,Cadillac,Cadillac CTS,4966,1834,1438,1659,276,66970
+2005,General Motors,Cadillac,Cadillac Escalade,5052,2004,1885,2550,345,88950
+2010,General Motors,Cadillac,Cadillac SRX,4967,1910,1667,1995,269,91915
+2005,General Motors,Cadillac,Cadillac STS,4985,1843,1464,1782,257,60850
+2004,General Motors,Cadillac,Cadillac XLR,4514,1836,1280,1654,326,115450
+2017,General Motors,Cadillac,Cadillac XT5,4815,1903,1675,1931,314,93410
+2001,General Motors,Chevrolet,Chevrolet Alero,4742,1780,1399,1480,141,26546
+2008,General Motors,Chevrolet,Chevrolet Aveo,3920,1680,1505,1005,84,11295
+2011,General Motors,Chevrolet,Chevrolet Captiva,4673,1849,1727,1768,167,39995
+2014,General Motors,Chevrolet,Chevrolet Cruze,4597,1788,1477,1300,100,18995
+2006,General Motors,Chevrolet,Chevrolet Epica,4805,1810,1450,1460,141,27230
+2005,General Motors,Chevrolet,Chevrolet Evanda,4770,1815,1440,1422,131,21995
+2007,General Motors,Chevrolet,Chevrolet HHR,4475,1755,1588,1455,170,29464
+2005,General Motors,Chevrolet,Chevrolet Kalos,3880,1670,1495,965,71,9995
+2005,General Motors,Chevrolet,Chevrolet Lacetti,4295,1725,1445,1145,93,16595
+2005,General Motors,Chevrolet,Chevrolet Matiz,3495,1495,1485,751,51,7950
+2005,General Motors,Chevrolet,Chevrolet Nubira,4500,1725,1445,1150,92,15995
+2013,General Motors,Chevrolet,Chevrolet Orlando,4652,1875,1633,1539,140,26795
+2010,General Motors,Chevrolet,Chevrolet Spark,3640,1597,1522,832,68,7595
+2006,General Motors,Chevrolet,Chevrolet Tacuma,4350,1755,1580,1247,105,15995
+2001,General Motors,Chevrolet,Chevrolet TrailBlazer,4893,1905,1826,2053,273,52450
+2013,General Motors,Chevrolet,Chevrolet Trax,4248,1776,1674,1287,115,21995
+2011,General Motors,Chevrolet,Chevrolet Volt,4498,1798,1439,1632,150,38495
+2004,Fiat Chrysler Automobiles,Chrysler,Chrysler 300C,5015,1880,1483,1705,193,59127
+2005,Fiat Chrysler Automobiles,Chrysler,Chrysler Crossfire,4058,1766,1307,1352,218,47250
+2004,Fiat Chrysler Automobiles,Chrysler,Chrysler Grand,5096,1997,1748,1835,147,32500
+2001,Fiat Chrysler Automobiles,Chrysler,Chrysler Neon,4390,1711,1421,1165,115,16955
+2006,Fiat Chrysler Automobiles,Chrysler,Chrysler PT,4288,1704,1601,1341,115,17950
+2007,Fiat Chrysler Automobiles,Chrysler,Chrysler Sebring,4850,1843,1497,1455,156,23625
+2002,Groupe PSA,Citroen,Citroen Berlingo,4137,1724,1810,1163,75,15595
+2008,Groupe PSA,Citroen,Citroen C-Crosser,4646,1806,1670,1585,170,39790
+2010,Groupe PSA,Citroen,Citroen C-Zero,3480,1475,1600,1110,64,28990
+2012,Groupe PSA,Citroen,Citroen C1,3440,1630,1465,805,68,10090
+2003,Groupe PSA,Citroen,Citroen C2,3666,1659,1461,907,61,11800
+2009,Groupe PSA,Citroen,Citroen C3,3850,1670,1520,985,61,10990
+2004,Groupe PSA,Citroen,Citroen C4,4270,1769,1460,1157,90,18990
+2004,Groupe PSA,Citroen,Citroen C5,4750,1770,1480,1352,117,26190
+2006,Groupe PSA,Citroen,Citroen C6,4908,1860,1464,1791,215,55490
+2002,Groupe PSA,Citroen,Citroen C8,4726,1854,1856,1606,138,33450
+2010,Groupe PSA,Citroen,Citroen DS3,3948,1715,1458,1050,95,18340
+2011,Groupe PSA,Citroen,Citroen DS4,4275,1810,1526,1180,120,25580
+2011,Groupe PSA,Citroen,Citroen DS5,4530,1871,1504,1395,156,36990
+2008,Groupe PSA,Citroen,Citroen Grand,4585,1829,1660,1461,120,25690
+2014,Groupe PSA,Citroen,Citroen Jumper,4963,2050,2254,1820,110,18990
+2012,Groupe PSA,Citroen,Citroen Jumpy,4805,1895,1942,1680,90,18400
+2009,Groupe PSA,Citroen,Citroen Nemo,3864,1716,1721,1137,73,9730
+2020,Groupe PSA,Citroen,Citroen e-Jumpy,4606,1920,1905,1946,136,39945
+2020,Groupe PSA,Citroen,Citroen e-SpaceTourer,4956,1920,1895,1987,136,52295
+2020,Groupe PSA,Citroen,Citroen ÃƒÂ«-C4,4360,1800,1525,1516,136,37350
+2013,RNMA Alliance,Dacia,Dacia Dokker,4363,1751,1814,1180,115,15690
+2010,RNMA Alliance,Dacia,Dacia Duster,4315,1822,1625,1135,105,16290
+2012,RNMA Alliance,Dacia,Dacia Lodgy,4498,1751,1682,1156,115,15990
+2005,RNMA Alliance,Dacia,Dacia Logan,4250,1740,1534,950,75,8495
+2009,RNMA Alliance,Dacia,Dacia Sandero,4020,1746,1534,950,75,8973
+2006,Toyota,Daihatsu,Daihatsu Copen,3395,1475,1245,850,87,21999
+2006,Toyota,Daihatsu,Daihatsu Cuore,3410,1475,1500,720,58,6999
+2007,Toyota,Daihatsu,Daihatsu Materia,3800,1690,1635,1000,91,16249
+2001,Toyota,Daihatsu,Daihatsu Move,3410,1475,1695,790,58,12249
+2006,Toyota,Daihatsu,Daihatsu Trevis,3400,1475,1500,790,58,10699
+2001,Toyota,Daihatsu,Daihatsu Young,3765,1620,1550,847,58,9999
+2007,Fiat Chrysler Automobiles,Dodge,Dodge Avenger,4850,1843,1497,1480,156,24450
+2006,Fiat Chrysler Automobiles,Dodge,Dodge Caliber,4415,1800,1535,1295,150,19231
+2010,Fiat Chrysler Automobiles,Dodge,Dodge Journey,4888,1834,1672,1660,170,25990
+2007,Fiat Chrysler Automobiles,Dodge,Dodge Nitro,4584,1856,1773,1875,205,44000
+2005,Fiat Chrysler Automobiles,Dodge,Dodge Viper,4460,1910,1210,1565,500,152900
+2011,Independent,Ferrari,Ferrari 458,4527,1937,1213,1490,570,252726
+2015,Independent,Ferrari,Ferrari 488,4568,1952,1213,1370,670,298091
+2002,Independent,Ferrari,Ferrari 575M,4549,1935,1277,1730,515,264068
+2006,Independent,Ferrari,Ferrari 599,4665,1962,1336,1690,620,351823
+2004,Independent,Ferrari,Ferrari 612,4900,1955,1345,1840,540,331760
+2020,Independent,Ferrari,Ferrari 812,4693,1971,1276,1600,740,423528
+2011,Independent,Ferrari,Ferrari California,4563,1902,1308,1775,460,221204
+2002,Independent,Ferrari,Ferrari Enzo,4700,,,1365,659,909770
+2012,Independent,Ferrari,Ferrari F12,4618,1942,1273,1525,740,358982
+2004,Independent,Ferrari,Ferrari F430,4512,1923,1214,1450,490,244387
+2020,Independent,Ferrari,Ferrari F8,4611,1979,1206,1400,720,321350
+2011,Independent,Ferrari,Ferrari FF,4907,1953,1379,1790,660,352932
+2017,Independent,Ferrari,Ferrari GTC4,4922,1980,1383,1740,610,307152
+2018,Independent,Ferrari,Ferrari Portofino,4586,1938,1318,1545,600,244737
+2020,Independent,Ferrari,Ferrari Roma,4656,1974,1301,1570,612,232525
+2020,Independent,Ferrari,Ferrari SF90,4710,1972,1186,1570,1000,455827
+2005,Independent,Ferrari,Ferrari Superamerica,4549,1935,1277,1730,515,329816
+2016,Fiat Chrysler Automobiles,Fiat,Fiat 124,4054,1740,1233,1025,140,35165
+2008,Fiat Chrysler Automobiles,Fiat,Fiat 500,3546,1627,1488,840,69,11500
+2010,Fiat Chrysler Automobiles,Fiat,Fiat 500C,3546,1627,1488,880,69,15795
+2013,Fiat Chrysler Automobiles,Fiat,Fiat 500L,4352,1784,1667,1265,105,21995
+2019,Fiat Chrysler Automobiles,Fiat,Fiat 500X,4264,1796,1595,1295,115,23780
+2020,Fiat Chrysler Automobiles,Fiat,Fiat 500e,3632,1683,1527,1255,95,23900
+2020,Fiat Chrysler Automobiles,Fiat,Fiat 500eC,3632,1683,1527,1405,118,30600
+2005,Fiat Chrysler Automobiles,Fiat,Fiat 600,3337,1508,1420,735,54,6995
+2008,Fiat Chrysler Automobiles,Fiat,Fiat Croma,4783,1775,1597,1405,140,26795
+2001,Fiat Chrysler Automobiles,Fiat,Fiat Doblo,4159,1714,1800,1195,65,13395
+2012,Fiat Chrysler Automobiles,Fiat,Fiat Ducato,4963,2050,2254,1910,115,37300
+2010,Fiat Chrysler Automobiles,Fiat,Fiat Fiorino,3864,1716,1721,1045,73,7795
+2016,Fiat Chrysler Automobiles,Fiat,Fiat Fullback,5285,1785,1775,1870,154,60872
+2006,Fiat Chrysler Automobiles,Fiat,Fiat Grande,4030,1687,1490,1005,65,13395
+2005,Fiat Chrysler Automobiles,Fiat,Fiat Idea,3930,1698,1660,1130,77,15295
+2004,Fiat Chrysler Automobiles,Fiat,Fiat Multipla,4089,1871,1695,1275,103,21695
+2005,Fiat Chrysler Automobiles,Fiat,Fiat Panda,3538,1578,1540,815,54,7595
+2009,Fiat Chrysler Automobiles,Fiat,Fiat Qubo,3959,1716,1735,1155,73,14500
+2012,Fiat Chrysler Automobiles,Fiat,Fiat Scudo,4805,1895,1980,1881,128,45490
+2012,Fiat Chrysler Automobiles,Fiat,Fiat Sedici,4115,1755,1620,1115,120,18995
+2004,Fiat Chrysler Automobiles,Fiat,Fiat Seicento,3337,1508,1420,710,54,7895
+2006,Fiat Chrysler Automobiles,Fiat,Fiat Stilo,4253,1756,1475,1145,95,16995
+2012,Fiat Chrysler Automobiles,Fiat,Fiat Strada,4335,1670,1578,1210,95,13350
+2016,Fiat Chrysler Automobiles,Fiat,Fiat Talento,4999,1956,1971,1900,95,46859
+2016,Fiat Chrysler Automobiles,Fiat,Fiat Tipo,4532,1792,1497,1125,95,19685
+2012,Ford Motor Company,Ford,Ford B-MAX,4077,1751,1604,1179,100,18860
+2015,Ford Motor Company,Ford,Ford C-MAX,4379,1828,1610,1291,100,23295
+2018,Ford Motor Company,Ford,Ford EcoSport,4096,1765,1653,1249,100,21635
+2019,Ford Motor Company,Ford,Ford Edge,4834,1928,1732,2016,238,74995
+2020,Ford Motor Company,Ford,Ford Explorer,5049,2004,1778,2466,457,76710
+2014,Ford Motor Company,Ford,Ford Focus,4360,1823,1484,1176,100,19490
+2005,Ford Motor Company,Ford,Ford Fusion,4020,1721,1528,1070,80,15695
+2015,Ford Motor Company,Ford,Ford Galaxy,4844,1916,1747,1608,160,45760
+2015,Ford Motor Company,Ford,Ford Grand,4519,1828,1642,1393,100,23195
+2018,Ford Motor Company,Ford,Ford Ka+,3929,1695,1524,963,70,14100
+2015,Ford Motor Company,Ford,Ford Kuga,4524,1838,1702,1479,120,26990
+2015,Ford Motor Company,Ford,Ford Mondeo,4871,1852,1482,1355,125,30425
+2018,Ford Motor Company,Ford,Ford Mustang,4789,1915,1396,1699,290,67820
+2020,Ford Motor Company,Ford,Ford Puma,4186,1805,1550,1009,95,23045
+2015,Ford Motor Company,Ford,Ford Ranger,5354,1860,1815,1893,160,57851
+2015,Ford Motor Company,Ford,Ford S-MAX,4796,1916,1658,1640,160,38820
+2003,Ford Motor Company,Ford,Ford Sportka,3650,1695,1409,935,95,15395
+2003,Ford Motor Company,Ford,Ford Streetka,3650,1679,1332,1064,95,26000
+2003,Ford Motor Company,Ford,Ford Tourneo,4280,1795,1825,1410,115,17645
+2012,Ford Motor Company,Ford,Ford Transit,4863,1974,1989,1736,100,20250
+2018,Honda,Honda,Honda CR-V,4600,1855,1679,1501,173,40055
+2013,Honda,Honda,Honda CR-Z,4075,1740,1395,1131,137,24990
+2017,Honda,Honda,Honda Civic,4518,1799,1434,1229,129,25045
+2004,Honda,Honda,Honda FR-V,4285,1810,1610,1366,125,26210
+2018,Honda,Honda,Honda HR-V,4334,1772,1605,1241,130,27690
+2009,Honda,Honda,Honda Insight,4395,1695,1425,1176,98,19990
+2008,Honda,Honda,Honda Jazz,3900,1695,1525,1022,90,14900
+2002,Honda,Honda,Honda NSX,4425,1810,1170,1445,280,126000
+2004,Honda,Honda,Honda S2000,4135,1750,1285,1220,240,55250
+2001,Honda,Honda,Honda Stream,4570,1695,1590,1333,125,24940
+2020,Honda,Honda,Honda e,3894,1752,1512,1525,136,34500
+2001,Hyundai Motor Group,Hyundai,Hyundai Accent,4200,1670,1395,965,86,11175
+2005,Hyundai Motor Group,Hyundai,Hyundai Atos,3565,1525,1570,859,63,8995
+2001,Hyundai Motor Group,Hyundai,Hyundai Elantra,4495,1720,1425,1153,107,15375
+2010,Hyundai Motor Group,Hyundai,Hyundai Genesis,4630,1865,1385,1470,213,44995
+2005,Hyundai Motor Group,Hyundai,Hyundai Getz,3825,1665,1490,950,66,10495
+2005,Hyundai Motor Group,Hyundai,Hyundai Grandeur,4895,1865,1490,1639,235,43995
+2011,Hyundai Motor Group,Hyundai,Hyundai H300,5125,1920,1935,2078,136,19595
+2019,Hyundai Motor Group,Hyundai,Hyundai Ioniq,4470,1820,1450,1361,141,27132
+2017,Hyundai Motor Group,Hyundai,Hyundai Kona,4165,1800,1550,1208,120,21747
+2001,Hyundai Motor Group,Hyundai,Hyundai Matrix,4025,1740,1635,1223,103,15595
+2018,Hyundai Motor Group,Hyundai,Hyundai Nexo,4760,1860,1630,1789,163,83142
+2004,Hyundai Motor Group,Hyundai,Hyundai Terracan,4710,1860,1800,1982,194,44295
+2004,Hyundai Motor Group,Hyundai,Hyundai Trajet,4695,1840,1760,1731,140,27995
+2018,Hyundai Motor Group,Hyundai,Hyundai Tucson,4480,1850,1650,1389,132,33207
+2011,Hyundai Motor Group,Hyundai,Hyundai Veloster,4220,1790,1399,1160,140,23995
+2012,Hyundai Motor Group,Hyundai,Hyundai i10,3585,1595,1540,880,69,8695
+2018,Hyundai Motor Group,Hyundai,Hyundai i20,4035,1734,1474,1040,100,16247
+2020,Hyundai Motor Group,Hyundai,Hyundai i30,4340,1795,1455,1221,120,24097
+2016,Hyundai Motor Group,Hyundai,Hyundai i40,4745,1815,1470,1377,135,30035
+2016,Hyundai Motor Group,Hyundai,Hyundai ix20,4100,1765,1600,1153,90,20047
+2010,Hyundai Motor Group,Hyundai,Hyundai ix35,4410,1820,1670,1280,135,24995
+2008,RNMA Alliance,Infiniti,Infiniti EX37,4635,1800,1580,1776,320,68550
+2008,RNMA Alliance,Infiniti,Infiniti FX37,4870,1930,1680,1912,320,93610
+2008,RNMA Alliance,Infiniti,Infiniti G37,4770,1770,1450,1609,320,50550
+2010,RNMA Alliance,Infiniti,Infiniti M37,4945,1845,1500,1715,320,67795
+2015,RNMA Alliance,Infiniti,Infiniti Q30,4425,1805,1495,1393,122,35940
+2014,RNMA Alliance,Infiniti,Infiniti Q50,4790,1820,1445,1594,211,50875
+2016,RNMA Alliance,Infiniti,Infiniti Q60,4690,1850,1395,1622,211,49945
+2015,RNMA Alliance,Infiniti,Infiniti Q70,4980,1845,1493,1794,364,75375
+2017,RNMA Alliance,Infiniti,Infiniti QX30,4425,1815,1515,1442,211,52035
+2013,RNMA Alliance,Infiniti,Infiniti QX50,4635,1800,1580,1776,320,100031
+2013,RNMA Alliance,Infiniti,Infiniti QX70,4870,1930,1680,1912,320,113905
+2020,Tata Motors,Jaguar,Jaguar E-Pace,4395,1984,1648,1783,160,56447
+2017,Tata Motors,Jaguar,Jaguar F-Pace,4731,1936,1652,1760,250,79245
+2017,Tata Motors,Jaguar,Jaguar F-type,4482,1885,1308,1545,300,88885
+2020,Tata Motors,Jaguar,Jaguar I-Pace,4682,2011,1565,2133,320,64565
+2004,Tata Motors,Jaguar,Jaguar S-Type,4905,1818,1447,1620,201,52200
+2003,Tata Motors,Jaguar,Jaguar X-Type,4672,1789,1392,1450,157,33500
+2014,Tata Motors,Jaguar,Jaguar XE,4672,1850,1416,1530,200,53120
+2012,Tata Motors,Jaguar,Jaguar XF,4961,1877,1460,1770,240,61600
+2015,Tata Motors,Jaguar,Jaguar XJ,5130,1899,1460,1660,240,101460
+2007,Tata Motors,Jaguar,Jaguar XK,4791,1892,1322,1595,258,113090
+2002,Tata Motors,Jaguar,Jaguar XK8,4776,1829,1296,1685,300,99800
+2006,Fiat Chrysler Automobiles,Jeep,Jeep Commander,4787,1899,1826,2305,231,74747
+2020,Fiat Chrysler Automobiles,Jeep,Jeep Compass,4394,1819,1624,1405,130,31315
+2011,Fiat Chrysler Automobiles,Jeep,Jeep Grand,4822,1943,1781,2166,286,82490
+2010,Fiat Chrysler Automobiles,Jeep,Jeep Patriot,4410,1755,1630,1465,170,28247
+2019,Fiat Chrysler Automobiles,Jeep,Jeep Renegade,4236,1805,1667,1320,120,25355
+2019,Fiat Chrysler Automobiles,Jeep,Jeep Wrangler,4334,1894,1839,1783,272,100035
+2010,RNMA Alliance,Lada,Lada Kalina,4040,1700,1500,1128,90,9095
+2010,RNMA Alliance,Lada,Lada Priora,4350,1680,1420,1103,98,9845
+2011,Volkswagen Group,Lamborghini,Lamborghini Aventador,4800,2030,1136,1575,700,433517
+2003,Volkswagen Group,Lamborghini,Lamborghini Gallardo,4300,1900,1165,1430,500,208636
+2016,Volkswagen Group,Lamborghini,Lamborghini Huracan,4459,1924,1165,1389,580,247221
+2001,Volkswagen Group,Lamborghini,Lamborghini Murcielago,4580,2045,1135,1650,580,326860
+2018,Volkswagen Group,Lamborghini,Lamborghini Urus,5112,2016,1638,2200,650,278844
+2012,Fiat Chrysler Automobiles,Lancia,Lancia Flavia,4947,1843,1479,1765,170,52750
+2008,Fiat Chrysler Automobiles,Lancia,Lancia Musa,4035,1698,1660,1130,77,17995
+2004,Fiat Chrysler Automobiles,Lancia,Lancia Phedra,4750,1863,1752,1645,136,35750
+2002,Fiat Chrysler Automobiles,Lancia,Lancia Thesis,4888,1830,1465,1735,170,52395
+2012,Fiat Chrysler Automobiles,Lancia,Lancia Voyager,5218,1998,1750,1991,283,69890
+2011,Tata Motors,Land Rover,Land Rover Defender,4785,1790,2181,1890,122,30970
+2017,Tata Motors,Land Rover,Land Rover Discovery,4970,1940,1846,2087,300,102195
+2007,Tata Motors,Land Rover,Land Rover Freelander,4500,1910,1740,1795,233,34500
+2017,Tata Motors,Land Rover,Land Rover Range,5000,1983,1836,2509,404,132275
+2018,Toyota,Lexus,Lexus CT,4350,1765,1445,1345,136,28155
+2020,Toyota,Lexus,Lexus ES,4975,1865,1445,1655,218,53045
+2007,Toyota,Lexus,Lexus GS,4825,1815,1430,1595,249,61760
+2002,Toyota,Lexus,Lexus IS,4400,1725,1420,1355,155,31650
+2020,Toyota,Lexus,Lexus LC,4770,1920,1350,2010,464,185645
+2017,Toyota,Lexus,Lexus NX,4630,1845,1645,1695,197,56945
+2018,Toyota,Lexus,Lexus RC,4700,1840,1395,1710,223,48045
+2003,Toyota,Lexus,Lexus RX,4740,1845,1680,1835,204,59100
+2001,Toyota,Lexus,Lexus SC,4515,1825,1370,1740,286,109300
+2019,Toyota,Lexus,Lexus UX,4495,1840,1540,1515,184,43655
+2001,Geely,Lotus,Lotus Elise,3785,1719,1143,710,122,46222
+2006,Geely,Lotus,Lotus Europa,3900,1714,1120,995,200,67950
+2009,Geely,Lotus,Lotus Evora,4350,1848,1229,1382,280,82849
+2004,Geely,Lotus,Lotus Exige,3797,1727,1159,875,192,62016
+2003,Fiat Chrysler Automobiles,Maserati,Maserati Coupe,4525,1822,1305,1570,390,120508
+2010,Fiat Chrysler Automobiles,Maserati,Maserati GranCabrio,4881,1915,1380,1887,440,214576
+2007,Fiat Chrysler Automobiles,Maserati,Maserati GranTurismo,4881,1915,1353,1780,405,190427
+2017,Fiat Chrysler Automobiles,Maserati,Maserati Levante,5003,1968,1679,2109,350,136008
+2008,Fiat Chrysler Automobiles,Maserati,Maserati Quattroporte,5097,1895,1438,1880,400,187167
+2003,Fiat Chrysler Automobiles,Maserati,Maserati Spyder,4303,1822,1305,1620,390,128506
+2006,Independent,Mazda,Mazda 2,3925,1680,1530,1025,75,14310
+2006,Independent,Mazda,Mazda 3,4415,1755,1465,1165,84,17995
+2008,Independent,Mazda,Mazda 5,4505,1755,1665,1395,115,24495
+2007,Independent,Mazda,Mazda 6,4755,1795,1440,1255,120,25795
+2018,Independent,Mazda,Mazda CX-3,4275,1765,1535,1159,121,23700
+2019,Independent,Mazda,Mazda CX-30,4395,1795,1540,1295,122,29580
+2017,Independent,Mazda,Mazda CX-5,4550,1840,1675,1335,165,31050
+2009,Independent,Mazda,Mazda CX-7,4698,1870,1645,1715,260,62440
+2009,Independent,Mazda,Mazda CX-9,5089,1936,1728,2040,273,57995
+2020,Independent,Mazda,Mazda MX-30,4395,1795,1570,1620,145,33100
+2001,Independent,Mazda,Mazda Premacy,4340,1705,1600,1250,100,19095
+2003,Independent,Mazda,Mazda RX-8,4430,1770,1340,1394,192,46509
+2001,Independent,Mazda,Mazda Tribute,4395,1800,1710,1425,124,28725
+2012,Independent,McLaren,McLaren 12C,4509,1908,1199,1341,625,293202
+2011,Independent,McLaren,McLaren MP4-12C,4509,1908,1199,1301,600,257755
+2001,Daimler AG,Mercedes-Benz,Mercedes-Benz A,3606,1719,1575,1005,82,21550
+2014,Daimler AG,Mercedes-Benz,Mercedes-Benz AMG,4546,1939,1288,1515,462,157506
+2008,Daimler AG,Mercedes-Benz,Mercedes-Benz B,4270,1777,1604,1200,95,26650
+2018,Daimler AG,Mercedes-Benz,Mercedes-Benz C,4686,1810,1442,1360,129,39086
+2019,Daimler AG,Mercedes-Benz,Mercedes-Benz CLA,4688,1830,1439,1295,136,35990
+2009,Daimler AG,Mercedes-Benz,Mercedes-Benz CLC,4448,1728,1405,1370,129,31950
+2008,Daimler AG,Mercedes-Benz,Mercedes-Benz CLS,4917,1873,1430,1630,224,78550
+2014,Daimler AG,Mercedes-Benz,Mercedes-Benz Citan,3937,1830,1820,1270,75,13540
+2020,Daimler AG,Mercedes-Benz,Mercedes-Benz E,4935,1852,1468,1600,197,58787
+2019,Daimler AG,Mercedes-Benz,Mercedes-Benz EQC,4762,1884,1624,2395,408,76835
+2020,Daimler AG,Mercedes-Benz,Mercedes-Benz EQV,5140,1928,1901,2635,204,72588
+2014,Daimler AG,Mercedes-Benz,Mercedes-Benz GL,5120,1934,1850,2335,333,105950
+2020,Daimler AG,Mercedes-Benz,Mercedes-Benz GLA,4410,1834,1611,1380,136,46093
+2020,Daimler AG,Mercedes-Benz,Mercedes-Benz GLB,4634,1834,1658,1455,136,48894
+2019,Daimler AG,Mercedes-Benz,Mercedes-Benz GLC,4655,1890,1644,1660,197,58255
+2020,Daimler AG,Mercedes-Benz,Mercedes-Benz GLE,4924,1947,1772,2525,333,94787
+2013,Daimler AG,Mercedes-Benz,Mercedes-Benz GLK,4525,1840,1699,1635,184,48395
+2015,Daimler AG,Mercedes-Benz,Mercedes-Benz GLS,5130,1934,1850,2335,333,133472
+2007,Daimler AG,Mercedes-Benz,Mercedes-Benz R,4922,1922,1659,2030,231,70901
+2008,Daimler AG,Mercedes-Benz,Mercedes-Benz SL,4562,1820,1317,1725,231,109999
+2016,Daimler AG,Mercedes-Benz,Mercedes-Benz SLC,4133,1810,1301,1335,156,45538
+2011,Daimler AG,Mercedes-Benz,Mercedes-Benz SLK,4134,1810,1301,1335,184,48450
+2003,Daimler AG,Mercedes-Benz,Mercedes-Benz SLR,4656,1908,1261,1668,626,614000
+2010,Daimler AG,Mercedes-Benz,Mercedes-Benz SLS,4638,1939,1262,1595,571,260200
+2018,Daimler AG,Mercedes-Benz,Mercedes-Benz Sprinter,5267,1993,2435,2020,114,21490
+2015,Daimler AG,Mercedes-Benz,Mercedes-Benz V,4895,1928,1880,1995,136,75108
+2002,Daimler AG,Mercedes-Benz,Mercedes-Benz Vaneo,4192,1742,1830,1190,82,23238
+2010,Daimler AG,Mercedes-Benz,Mercedes-Benz Viano,4763,1901,1875,1930,136,30690
+2014,Daimler AG,Mercedes-Benz,Mercedes-Benz Vito,4895,1928,1910,1760,88,16990
+2018,Daimler AG,Mercedes-Benz,Mercedes-Benz X,5340,1920,1819,2033,163,85802
+2020,Daimler AG,Mercedes-Benz,Mercedes-Benz eSprinter,6088,1993,2687,2460,116,53990
+2019,Daimler AG,Mercedes-Benz,Mercedes-Benz eVito,5140,1928,1910,2185,116,43335
+2018,BMW,Mini,Mini Cabrio,3821,1727,1415,1230,102,28810
+2019,BMW,Mini,Mini Clubman,4266,1800,1441,1305,102,28510
+2020,BMW,Mini,Mini Countryman,4297,1822,1557,1365,102,31310
+2011,BMW,Mini,Mini Coupe,3728,1683,1378,1065,122,25995
+2019,BMW,Mini,Mini Electric,3850,1750,1450,1340,184,33768
+2014,BMW,Mini,Mini One,3982,1727,1425,1125,102,21873
+2014,BMW,Mini,Mini Paceman,4109,1786,1518,1230,122,29495
+2012,BMW,Mini,Mini Roadster,3728,1683,1384,1095,122,27995
+2018,RNMA Alliance,Mitsubishi,Mitsubishi ASX,4365,1770,1640,1235,117,23070
+2003,RNMA Alliance,Mitsubishi,Mitsubishi Carisma,4475,1710,1405,1155,100,17295
+2005,RNMA Alliance,Mitsubishi,Mitsubishi Colt,3870,1695,1550,940,75,12499
+2004,RNMA Alliance,Mitsubishi,Mitsubishi Grandis,4765,1795,1655,1620,165,30699
+2020,RNMA Alliance,Mitsubishi,Mitsubishi L200,5215,1815,1780,1910,150,25990
+2003,RNMA Alliance,Mitsubishi,Mitsubishi Outlander,4545,1750,1620,1410,136,26645
+2010,RNMA Alliance,Mitsubishi,Mitsubishi i-MiEV,3475,1475,1610,1085,67,19990
+2006,RNMA Alliance,Nissan,Nissan 350Z,4315,1815,1325,1534,300,53545
+2009,RNMA Alliance,Nissan,Nissan 370Z,4250,1845,1315,1471,331,55100
+2010,RNMA Alliance,Nissan,Nissan Cube,3980,1695,1670,1090,110,19800
+2011,RNMA Alliance,Nissan,Nissan Evalia,4400,1695,1860,1400,110,28997
+2009,RNMA Alliance,Nissan,Nissan GT-R,4650,1895,1370,1740,485,120200
+2013,RNMA Alliance,Nissan,Nissan Juke,4135,1765,1570,1095,94,19490
+2010,RNMA Alliance,Nissan,Nissan Leaf,4445,1770,1550,1525,109,32590
+2003,RNMA Alliance,Nissan,Nissan Micra,3715,1660,1540,915,65,11475
+2010,RNMA Alliance,Nissan,Nissan Murano,4860,1885,1720,1765,255,87487
+2019,RNMA Alliance,Nissan,Nissan NP300,5280,1850,1824,2145,160,29825
+2011,RNMA Alliance,Nissan,Nissan NV200,4400,1695,1860,1400,110,13930
+2018,RNMA Alliance,Nissan,Nissan NV300,4999,1956,1971,1725,95,48697
+2013,RNMA Alliance,Nissan,Nissan NV400,5048,2070,2303,1962,100,49828
+2010,RNMA Alliance,Nissan,Nissan Navara,5296,1850,1797,2020,190,63344
+2013,RNMA Alliance,Nissan,Nissan Note,4100,1695,1535,1036,80,14490
+2010,RNMA Alliance,Nissan,Nissan Pathfinder,4813,1848,1780,2060,190,79512
+2009,RNMA Alliance,Nissan,Nissan Pixo,3565,1600,1470,830,68,7999
+2011,RNMA Alliance,Nissan,Nissan Primastar,4782,1904,1942,1785,90,44812
+2002,RNMA Alliance,Nissan,Nissan Primera,4567,1760,1482,1262,109,21495
+2014,RNMA Alliance,Nissan,Nissan Pulsar,4387,1768,1515,1165,115,21490
+2014,RNMA Alliance,Nissan,Nissan Qashqai,4377,1806,1590,1250,115,24790
+2010,RNMA Alliance,Nissan,Nissan Qashqai+2,4541,1783,1646,1265,115,24990
+2005,RNMA Alliance,Nissan,Nissan X-Trail,4510,1765,1675,1405,140,27265
+2014,RNMA Alliance,Nissan,Nissan e-Evalia,4560,1755,1850,1514,109,37480
+2013,Groupe PSA,Opel,Opel Adam,3698,1720,1484,986,68,13545
+2008,Groupe PSA,Opel,Opel Agila,3740,1680,1590,950,65,11220
+2011,Groupe PSA,Opel,Opel Ampera,4498,1787,1439,1635,150,34900
+2017,Groupe PSA,Opel,Opel Ampera-e,4164,1765,1594,1611,204,40000
+2011,Groupe PSA,Opel,Opel Antara,4596,1850,1761,1650,167,37195
+2015,Groupe PSA,Opel,Opel Astra,4370,1809,1485,1163,105,21074
+2013,Groupe PSA,Opel,Opel Cascada,4696,1839,1443,1601,140,35395
+2019,Groupe PSA,Opel,Opel Combo,4403,1848,1796,1284,110,13349
+2020,Groupe PSA,Opel,Opel Corsa-e,4060,1765,1435,1455,136,29599
+2020,Groupe PSA,Opel,Opel Crossland,4217,1825,1605,1065,83,21100
+2007,Groupe PSA,Opel,Opel GT,4100,1813,1274,1306,264,34995
+2017,Groupe PSA,Opel,Opel Grandland,4477,1856,1609,1270,130,30554
+2014,Groupe PSA,Opel,Opel Insignia,4842,1858,1484,1403,140,30595
+2015,Groupe PSA,Opel,Opel Karl,3675,1604,1476,839,75,12099
+2010,Groupe PSA,Opel,Opel Meriva,4288,1812,1615,1285,100,18295
+2020,Groupe PSA,Opel,Opel Mokka,4151,1790,1523,1170,100,25400
+2020,Groupe PSA,Opel,Opel Mokka-e,4151,1790,1523,1498,136,33399
+2011,Groupe PSA,Opel,Opel Movano,5048,2070,2307,2053,100,45998
+2003,Groupe PSA,Opel,Opel Signum,4636,1798,1466,1405,122,29995
+2001,Groupe PSA,Opel,Opel Speedster,3786,1708,1117,870,147,28995
+2004,Groupe PSA,Opel,Opel Tour,4332,1684,1801,1135,90,15645
+2005,Groupe PSA,Opel,Opel Vectra,4611,1798,1460,1295,100,23845
+2011,Groupe PSA,Opel,Opel Vivaro,4782,1904,1982,1876,90,41719
+2016,Groupe PSA,Opel,Opel Zafira,4666,1884,1687,1513,120,29195
+2005,Groupe PSA,Peugeot,Peugeot 1007,3731,1686,1620,1115,75,16325
+2013,Groupe PSA,Peugeot,Peugeot 107,3430,1655,1470,785,68,8590
+2014,Groupe PSA,Peugeot,Peugeot 108,3475,1615,1460,815,68,10585
+2013,Groupe PSA,Peugeot,Peugeot 2008,4159,1739,1556,1020,82,18200
+2001,Groupe PSA,Peugeot,Peugeot 206,3835,1673,1373,1115,110,22635
+2009,Groupe PSA,Peugeot,Peugeot 206+,3872,1655,1446,950,60,12020
+2009,Groupe PSA,Peugeot,Peugeot 207,4037,1750,1397,1317,120,26840
+2015,Groupe PSA,Peugeot,Peugeot 208,3965,1739,1460,945,68,15280
+2016,Groupe PSA,Peugeot,Peugeot 3008,4447,1844,1624,1229,130,31570
+2002,Groupe PSA,Peugeot,Peugeot 307,4419,1757,1510,1192,75,18100
+2017,Groupe PSA,Peugeot,Peugeot 308,4253,1804,1457,1055,110,21460
+2007,Groupe PSA,Peugeot,Peugeot 4007,4637,1806,1670,1550,170,37620
+2005,Groupe PSA,Peugeot,Peugeot 407,4815,1868,1399,1500,163,38290
+2017,Groupe PSA,Peugeot,Peugeot 5008,4641,1844,1646,1290,130,34220
+2014,Groupe PSA,Peugeot,Peugeot 508,4792,1853,1456,1365,120,29080
+2001,Groupe PSA,Peugeot,Peugeot 607,4871,1835,1460,1400,138,34250
+2008,Groupe PSA,Peugeot,Peugeot 807,4727,1854,1752,1606,140,36990
+2009,Groupe PSA,Peugeot,Peugeot Bipper,3959,1684,1721,1155,75,17325
+2014,Groupe PSA,Peugeot,Peugeot Boxer,4963,2050,2254,1910,110,48844
+2016,Groupe PSA,Peugeot,Peugeot Expert,4606,1920,1905,1472,95,17000
+2010,Groupe PSA,Peugeot,Peugeot Ion,3474,1475,1608,1100,64,29990
+2015,Groupe PSA,Peugeot,Peugeot Partner,4380,1810,1801,1320,98,12150
+2013,Groupe PSA,Peugeot,Peugeot RCZ,4287,1845,1359,1250,155,35700
+2018,Groupe PSA,Peugeot,Peugeot Rifter,4403,1848,1874,1401,110,30430
+2016,Groupe PSA,Peugeot,Peugeot Traveller,4956,1920,1895,1520,95,51299
+2019,Groupe PSA,Peugeot,Peugeot e-2008,4300,1750,1530,1455,110,39900
+2020,Groupe PSA,Peugeot,Peugeot e-208,4055,1745,1430,1430,136,33900
+2020,Groupe PSA,Peugeot,Peugeot e-Expert,4606,1920,1895,1946,136,39945
+2020,Groupe PSA,Peugeot,Peugeot e-Traveller,4956,1920,1895,1987,136,52295
+2016,Volkswagen Group,Porsche,Porsche 718,4379,1801,1281,1340,300,83231
+2014,Volkswagen Group,Porsche,Porsche 918,4643,1940,1167,1660,887,780450
+2012,Volkswagen Group,Porsche,Porsche Boxster,4374,1801,1282,1315,265,73600
+2003,Volkswagen Group,Porsche,Porsche Carrera,4613,1921,1166,1380,612,646605
+2017,Volkswagen Group,Porsche,Porsche Cayenne,4918,1983,1696,1960,340,123243
+2013,Volkswagen Group,Porsche,Porsche Cayman,4380,1801,1294,1315,275,74100
+2018,Volkswagen Group,Porsche,Porsche Macan,4696,1923,1624,1770,252,91963
+2020,Volkswagen Group,Porsche,Porsche Panamera,5049,1937,1423,1835,330,128363
+2019,Volkswagen Group,Porsche,Porsche Taycan,4963,1966,1379,2115,530,108546
+2002,RNMA Alliance,Renault,Renault Avantime,4642,1834,1627,1616,165,35000
+2013,RNMA Alliance,Renault,Renault Captur,4122,1778,1566,1080,90,18370
+2006,RNMA Alliance,Renault,Renault Espace,4661,1860,1728,1640,140,35485
+2011,RNMA Alliance,Renault,Renault Fluence,4748,1809,1458,1543,95,25990
+2015,RNMA Alliance,Renault,Renault Kadjar,4449,1836,1607,1281,130,26520
+2005,RNMA Alliance,Renault,Renault Kangoo,4035,1672,1825,1010,75,14760
+2008,RNMA Alliance,Renault,Renault Koleos,4520,1855,1705,1539,170,29900
+2007,RNMA Alliance,Renault,Renault Laguna,4695,1811,1445,1330,110,25990
+2011,RNMA Alliance,Renault,Renault Master,5048,2070,2307,1962,100,50200
+2005,RNMA Alliance,Renault,Renault Megane,4209,1777,1457,1140,82,18295
+2005,RNMA Alliance,Renault,Renault Modus,3792,1695,1589,1055,65,13895
+2001,RNMA Alliance,Renault,Renault Scenic,4169,1698,1675,1210,95,19595
+2020,RNMA Alliance,Renault,Renault Talisman,4865,1869,1465,1388,140,32830
+2011,RNMA Alliance,Renault,Renault Trafic,4782,1904,1959,1785,90,19340
+2012,RNMA Alliance,Renault,Renault Twizy,2338,1396,1454,474,16,7790
+2005,RNMA Alliance,Renault,Renault Vel,4860,1860,1577,1615,170,41285
+2010,RNMA Alliance,Renault,Renault Wind,3833,1689,1381,1106,100,20990
+2013,RNMA Alliance,Renault,Renault Zoe,4084,1730,1562,1403,88,20990
+2015,Volkswagen Group,Seat,Seat Alhambra,4854,1904,1720,1655,150,42930
+2009,Volkswagen Group,Seat,Seat Altea,4280,1768,1568,1235,85,18295
+2018,Volkswagen Group,Seat,Seat Arona,4138,1780,1552,1080,95,19865
+2016,Volkswagen Group,Seat,Seat Ateca,4339,1807,1601,1213,115,27825
+2006,Volkswagen Group,Seat,Seat Cordoba,4280,1698,1441,1041,70,11495
+2018,Volkswagen Group,Seat,Seat Cupra,4376,1841,1615,1515,300,62277
+2009,Volkswagen Group,Seat,Seat Exeo,4661,1772,1430,1285,102,24295
+2017,Volkswagen Group,Seat,Seat Ibiza,4059,1780,1444,991,75,15425
+2017,Volkswagen Group,Seat,Seat Leon,4282,1816,1459,1097,115,23025
+2012,Volkswagen Group,Seat,Seat Mii,3557,1641,1478,840,60,8700
+2019,Volkswagen Group,Seat,Seat Tarraco,4735,1839,1674,1476,150,36580
+2013,Volkswagen Group,Seat,Seat Toledo,4482,1706,1461,1035,75,14950
+2012,Volkswagen Group,Skoda,Skoda Citigo,3563,1641,1478,829,60,9150
+2020,Volkswagen Group,Skoda,Skoda Enyaq,4649,1879,1616,1923,180,38965
+2015,Volkswagen Group,Skoda,Skoda Fabia,3992,1732,1467,980,60,14550
+2019,Volkswagen Group,Skoda,Skoda Kamiq,4241,1793,1553,1121,95,21955
+2018,Volkswagen Group,Skoda,Skoda Karoq,4382,1841,1603,1240,115,29155
+2017,Volkswagen Group,Skoda,Skoda Kodiaq,4697,1882,1655,1427,125,30365
+2017,Volkswagen Group,Skoda,Skoda Octavia,4659,1814,1461,1125,115,22400
+2013,Volkswagen Group,Skoda,Skoda Rapid,4483,1706,1461,1035,85,15890
+2006,Volkswagen Group,Skoda,Skoda Roomster,4205,1684,1607,1125,65,16375
+2019,Volkswagen Group,Skoda,Skoda Scala,4362,1793,1471,1100,95,20855
+2008,Volkswagen Group,Skoda,Skoda Superb,4838,1817,1462,1382,125,27290
+2014,Volkswagen Group,Skoda,Skoda Yeti,4222,1793,1691,1240,105,23230
+2020,Daimler AG,Smart,Smart ,3700,1660,1605,835,83,16080
+2001,Daimler AG,Smart,Smart city-coupe,2500,1537,1529,730,55,13560
+2002,Daimler AG,Smart,Smart crossblade,2622,1618,1508,740,70,32942
+2005,Daimler AG,Smart,Smart forfour,3752,1684,1450,940,64,10490
+2015,Daimler AG,Smart,Smart fortwo,2695,1663,1555,790,71,11126
+2003,Daimler AG,Smart,Smart roadster,3427,1615,1192,790,62,18900
+2003,Daimler AG,Smart,Smart roadster-coupe,3427,1615,1192,810,82,24350
+2006,Independent,Subaru,Subaru B9,4857,1878,1686,1865,245,57240
+2012,Independent,Subaru,Subaru BRZ,4240,1775,1285,1177,200,38995
+2004,Independent,Subaru,Subaru G3X,3770,1605,1565,980,93,17515
+2006,Independent,Subaru,Subaru Impreza,4465,1740,1440,1255,105,21130
+2009,Independent,Subaru,Subaru Justy,3610,1665,1550,890,70,10495
+2015,Independent,Subaru,Subaru Levorg,4690,1780,1485,1506,170,40994
+2003,Independent,Subaru,Subaru Outback,4730,1770,1545,1405,165,35080
+2011,Independent,Subaru,Subaru Trezia,3995,1695,1595,1045,99,17775
+2008,Independent,Subaru,Subaru Tribeca,4865,1880,1720,1881,258,72995
+2014,Independent,Subaru,Subaru WRX,4595,1795,1475,1482,300,96194
+2013,Independent,Subaru,Subaru XV,4450,1780,1570,1325,114,26495
+2020,Suzuki,Suzuki,Suzuki Across,4635,1855,1690,1915,306,63900
+2016,Suzuki,Suzuki,Suzuki Baleno,3995,1745,1470,840,90,14705
+2015,Suzuki,Suzuki,Suzuki Celerio,3600,1600,1530,790,68,10244
+2008,Suzuki,Suzuki,Suzuki Grand,4035,1810,1695,1380,106,22816
+2016,Suzuki,Suzuki,Suzuki Ignis,3700,1660,1595,785,90,15144
+2010,Suzuki,Suzuki,Suzuki Kizashi,4650,1820,1470,1395,178,29999
+2001,Suzuki,Suzuki,Suzuki Liana,4230,1690,1550,1115,90,14999
+2016,Suzuki,Suzuki,Suzuki S-Cross,4300,1785,1580,1065,112,22044
+2006,Suzuki,Suzuki,Suzuki SX4,4100,1730,1565,1105,99,14525
+2008,Suzuki,Suzuki,Suzuki Splash,3715,1680,1590,950,65,9299
+2018,Suzuki,Suzuki,Suzuki Vitara,4170,1775,1595,1060,112,20744
+2006,Suzuki,Suzuki,Suzuki Wagon,3540,1600,1660,940,60,7929
+2020,Independent,Tesla,Tesla Model,4694,1849,1443,1584,325,48980
+2010,Independent,Tesla,Tesla Roadster,3945,1728,1121,1240,248,99960
+2009,Toyota,Toyota,Toyota Auris,4220,1760,1515,1195,100,16990
+2003,Toyota,Toyota,Toyota Avensis,4630,1760,1480,1220,110,23550
+2005,Toyota,Toyota,Toyota Aygo,3410,1615,1465,775,68,9390
+2020,Toyota,Toyota,Toyota C-HR,4390,1795,1565,1350,116,27450
+2019,Toyota,Toyota,Toyota Corolla,4370,1790,1435,1215,115,24710
+2012,Toyota,Toyota,Toyota GT86,4240,1775,1285,1205,200,39990
+2016,Toyota,Toyota,Toyota Hilux,5330,1855,1815,2045,150,61395
+2002,Toyota,Toyota,Toyota Land,4890,1940,1890,2245,238,93300
+2017,Toyota,Toyota,Toyota Mirai,4890,1815,1535,1825,154,80160
+2003,Toyota,Toyota,Toyota Previa,4780,1790,1770,1540,156,36550
+2015,Toyota,Toyota,Toyota Prius+,4645,1775,1575,1475,136,31980
+2020,Toyota,Toyota,Toyota Proace,4403,1848,1796,1284,110,13395
+2009,Toyota,Toyota,Toyota Urban,3930,1725,1525,1095,100,17805
+2007,Toyota,Toyota,Toyota Verso,4360,1770,1620,1320,110,22890
+2011,Toyota,Toyota,Toyota Verso-S,3990,1695,1595,1055,99,18995
+2005,Toyota,Toyota,Toyota Yaris,3750,1695,1530,955,69,11640
+2010,Toyota,Toyota,Toyota iQ,2985,1680,1500,820,68,12150
+2011,Volkswagen Group,Volkswagen,Volkswagen Amarok,5254,1944,1834,1744,122,22700
+2017,Volkswagen Group,Volkswagen,Volkswagen Arteon,4862,1871,1427,1404,150,39235
+2011,Volkswagen Group,Volkswagen,Volkswagen Beetle,4278,1808,1486,1174,105,21390
+2012,Volkswagen Group,Volkswagen,Volkswagen CC,4802,1855,1417,1405,160,40050
+2020,Volkswagen Group,Volkswagen,Volkswagen Caddy,4500,1855,1856,1445,102,14700
+2011,Volkswagen Group,Volkswagen,Volkswagen Crafter,5240,1993,2415,1804,109,25755
+2010,Volkswagen Group,Volkswagen,Volkswagen CrossGolf,4221,1776,1604,1294,105,30350
+2006,Volkswagen Group,Volkswagen,Volkswagen CrossPolo,3925,1671,1499,1057,65,19795
+2010,Volkswagen Group,Volkswagen,Volkswagen CrossTouran,4406,1799,1685,1467,140,36990
+2011,Volkswagen Group,Volkswagen,Volkswagen Eos,4423,1791,1444,1405,122,34750
+2005,Volkswagen Group,Volkswagen,Volkswagen Fox,3828,1660,1544,973,55,9995
+2017,Volkswagen Group,Volkswagen,Volkswagen Golf,4258,1799,1452,1127,85,23140
+2020,Volkswagen Group,Volkswagen,Volkswagen ID3,4261,1809,1568,1694,204,36880
+2020,Volkswagen Group,Volkswagen,Volkswagen ID4,4585,1852,1631,2024,204,46205
+2011,Volkswagen Group,Volkswagen,Volkswagen Jetta,4644,1778,1482,1205,105,22725
+2003,Volkswagen Group,Volkswagen,Volkswagen Multivan,4890,1904,1944,2084,115,45125
+2003,Volkswagen Group,Volkswagen,Volkswagen New,4081,1724,1498,1134,75,21150
+2002,Volkswagen Group,Volkswagen,Volkswagen Phaeton,5055,1903,1450,1970,241,83615
+2010,Volkswagen Group,Volkswagen,Volkswagen Sharan,4854,1904,1738,1623,150,40890
+2018,Volkswagen Group,Volkswagen,Volkswagen T-Cross,4108,1760,1584,1145,95,22670
+2017,Volkswagen Group,Volkswagen,Volkswagen T-Roc,4234,1819,1573,1170,116,26080
+2011,Volkswagen Group,Volkswagen,Volkswagen Tiguan,4426,1809,1703,1401,122,30390
+2019,Volkswagen Group,Volkswagen,Volkswagen Touareg,4878,1984,1717,1920,340,91470
+2019,Volkswagen Group,Volkswagen,Volkswagen Touran,4527,1829,1659,1360,115,33155
+2019,Volkswagen Group,Volkswagen,Volkswagen Transporter,4904,1904,1990,1764,90,18550
+2020,Volkswagen Group,Volkswagen,Volkswagen Up,3600,1641,1504,880,60,15105
+2011,Volkswagen Group,Volkswagen,Volkswagen Up!,3540,1641,1489,829,60,8490
+2014,Volkswagen Group,Volkswagen,Volkswagen XL1,3888,1665,1153,795,69,112866
+2017,Volkswagen Group,Volkswagen,Volkswagen e-Golf,4270,1799,1482,1515,136,39250
+2019,Volkswagen Group,Volkswagen,Volkswagen e-Up,3600,1645,1492,1135,83,22835
+2014,Volkswagen Group,Volkswagen,Volkswagen e-Up!,3540,1645,1489,1114,82,25925
+2006,Geely,Volvo,Volvo C30,4252,1782,1447,1178,100,23650
+2007,Geely,Volvo,Volvo S40,4476,1770,1454,1215,100,25995
+2004,Geely,Volvo,Volvo S60,4603,1804,1428,1403,140,33495
+2009,Geely,Volvo,Volvo S80,4851,1860,1492,1412,145,36995
+2002,Geely,Volvo,Volvo V40,4483,1717,1413,1255,109,22635
+2007,Geely,Volvo,Volvo V50,4522,1770,1457,1228,100,26995
+2020,Geely,Volvo,Volvo V60,4761,1850,1433,1661,163,40873
+2007,Geely,Volvo,Volvo V70,4823,1861,1540,1467,145,39895
+2020,Geely,Volvo,Volvo XC40,4425,1900,1652,2150,408,58775
+2010,Geely,Volvo,Volvo XC60,4628,1891,1713,1610,203,49495
+2004,Geely,Volvo,Volvo XC70,4733,1860,1562,1664,210,49815
+2003,Geely,Volvo,Volvo XC90,4798,1898,1743,2023,210,56115
