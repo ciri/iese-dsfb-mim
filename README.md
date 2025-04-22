@@ -5,13 +5,13 @@
 
 | Done? | Session  |  Topic |  Relevant Pages |
 |---|---|---|---|
-|  | 1  | [Introduction to Data Science](https://docs.google.com/presentation/d/1zTyDEWQCoNUeVZOm9FEEUZ3YlZPPgC0cDDT8_HuMPLE/edit?usp=sharing) | [Review Python](/notebooks/000-Introduction-to-Python.ipynb)  |
-|  | 2  | Numpy  | [Numpy](/notebooks/010-Numpy.ipynb) / [Images in Python](/notebooks/100-HowComputersSee.ipynb) |
-|  | 3  | [Image Data I: How Computers See](https://docs.google.com/presentation/d/1YyINIBI0fnK1mAGxmDVaY19IwtzNz6ra8qLkPFaJZRg/edit?usp=sharing) | [Images in Python](/notebooks/100-HowComputersSee.ipynb)  |
-|  | 4  | Image Data II: Computer Vision |[Computer Vision](/notebooks/110-ComputerVision.ipynb) , Haiteng Assignment (on VC) |
-|  | 5  | Introduction to Pandas |  [Pandas](/notebooks/200-Pandas.ipynb)  |
-|   | 6  | From data to model I |  Investment Drivers, AirBnB |
-|  | 7  | From data to model II |  AirBnB, Assignment |
+| ✓ | 1  | [Introduction to Data Science](https://docs.google.com/presentation/d/1zTyDEWQCoNUeVZOm9FEEUZ3YlZPPgC0cDDT8_HuMPLE/edit?usp=sharing) | [Review Python](/notebooks/000-Introduction-to-Python.ipynb)  |
+| ✓ | 2  | Numpy  | [Numpy](/notebooks/010-Numpy.ipynb) / [Images in Python](/notebooks/100-HowComputersSee.ipynb) |
+| ✓ | 3  | [Image Data I: How Computers See](https://docs.google.com/presentation/d/1YyINIBI0fnK1mAGxmDVaY19IwtzNz6ra8qLkPFaJZRg/edit?usp=sharing)  | [Images in Python](/notebooks/100-HowComputersSee.ipynb)  |
+| ✓ | 4  | [Image Data II: Computer Vision](https://docs.google.com/presentation/d/1_mXsWwveUcncoCuL_0hkDvayzYThh2Cvfm15Za5t0jg/edit?usp=sharing)  |[Computer Vision](/notebooks/110-ComputerVision.ipynb) , Haiteng Assignment (on VC) |
+| ✓ | 5  | [Introduction to Pandas](https://docs.google.com/presentation/d/1wlousJQTHXFtfZN4XJ8_o0UoDSvFvoaygw9qmNqRjxo/edit?usp=sharing)  |  [Pandas](/notebooks/200-Pandas.ipynb)  |
+| ✓  | 6  | Transactional Data |   [Amazon](/notebooks/210-Amazon-Part-I.ipynb) |
+| ✓ | 7  | Transactional Data |  [Amazon II](/notebooks/220-Amazon-Part-II.ipynb) |
 |  | 8  | Working with Time Series  |  Time Series in Pandas |
 |  | 9  | Text Data I  |  How Computers Read |
 |  | 10  | Text Data II  | How Computers Understand |
