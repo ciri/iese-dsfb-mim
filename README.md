@@ -12,9 +12,9 @@
 | ✓ | 5  | [Introduction to Pandas](https://docs.google.com/presentation/d/1wlousJQTHXFtfZN4XJ8_o0UoDSvFvoaygw9qmNqRjxo/edit?usp=sharing)  |  [Pandas](/notebooks/200-Pandas.ipynb)  |
 | ✓  | 6  | Transactional Data |   [Amazon](/notebooks/210-Amazon-Part-I.ipynb) |
 | . | 7  | Transactional Data |  [Amazon II](/notebooks/220-Amazon-Part-II.ipynb) |
-| .  | 8  | Working with Time Series  |  Time Series in Pandas |
-|  | 9  | Text Data I  |  How Computers Read |
-|  | 10  | Text Data II  | How Computers Understand |
+| .  | 8  | Working with Time Series  |  [Time Series in Pandas](/notebooks/300-Timeseries-Modeling-in-Pandas.ipynb) |
+|  | 9  | Text Data I  |  [Airline Text Analytics](/notebooks/400-Airline-Text-Analytics-Part-I.ipynb) |
+|  | 10  | Text Data II  | [Airline Text Analytics II](/notebooks/410-Airline-Text-Analytics-Part-II.ipynb) |
 
 ### Introduction
 In today’s job market, the role of "data scientist" has become increasingly prominent, blending data analysis with programming and database expertise. While the foundational techniques have existed for decades, the rise of big data, cloud computing, and artificial intelligence have accelerated the growth of data science as a field.
