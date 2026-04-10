@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NumPy Array Visualizer</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --font-sans: system-ui, -apple-system, sans-serif;
+    --font-mono: 'Menlo', 'Consolas', monospace;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --color-background-primary: #ffffff;
+    --color-background-secondary: #f5f4f0;
+    --color-background-info: #E6F1FB;
+    --color-background-success: #EAF3DE;
+    --color-background-warning: #FAEEDA;
+    --color-background-danger: #FCEBEB;
+    --color-text-primary: #1a1a18;
+    --color-text-secondary: #6b6a64;
+    --color-text-tertiary: #9c9a92;
+    --color-text-info: #0C447C;
+    --color-text-success: #27500A;
+    --color-text-warning: #633806;
+    --color-text-danger: #791F1F;
+    --color-border-tertiary: rgba(0,0,0,0.12);
+    --color-border-secondary: rgba(0,0,0,0.22);
+    --color-border-primary: rgba(0,0,0,0.35);
+    --color-border-info: #85B7EB;
+    --color-border-success: #97C459;
+    --color-border-warning: #EF9F27;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --color-background-primary: #1e1e1c;
+      --color-background-secondary: #2a2a28;
+      --color-background-info: #0c2a44;
+      --color-background-success: #142a06;
+      --color-background-warning: #2e1a04;
+      --color-text-primary: #e8e6de;
+      --color-text-secondary: #a0a096;
+      --color-text-tertiary: #6b6a64;
+      --color-text-info: #85B7EB;
+      --color-text-success: #97C459;
+      --color-text-warning: #FAC775;
+      --color-border-tertiary: rgba(255,255,255,0.1);
+      --color-border-secondary: rgba(255,255,255,0.18);
+      --color-border-primary: rgba(255,255,255,0.28);
+      --color-border-info: #185FA5;
+      --color-border-success: #3B6D11;
+      --color-border-warning: #854F0B;
+    }
+  }
+  body {
+    font-family: var(--font-sans);
+    background: var(--color-background-primary);
+    color: var(--color-text-primary);
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  h1 { font-size: 18px; font-weight: 500; margin-bottom: 4px; }
+  .subtitle { font-size: 13px; color: var(--color-text-secondary); margin-bottom: 1.5rem; }
+
+  .tabs{display:flex;gap:6px;margin-bottom:1.5rem;flex-wrap:wrap}
+  .tab{padding:6px 16px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-secondary);font-size:13px;cursor:pointer;background:var(--color-background-primary);color:var(--color-text-secondary);transition:all .15s}
+  .tab.on{background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info);font-weight:500}
+  .sec{display:none}.sec.on{display:block}
+  .cell{width:44px;height:40px;display:flex;align-items:center;justify-content:center;font-size:13px;font-family:var(--font-mono);border-radius:6px;border:0.5px solid var(--color-border-tertiary);background:var(--color-background-secondary);color:var(--color-text-primary);transition:background .2s,border .2s,color .2s;cursor:default}
+  .cell.sel{background:var(--color-background-warning);border-color:var(--color-border-warning);color:var(--color-text-warning);font-weight:500}
+  .idx{width:22px;height:40px;display:flex;align-items:center;justify-content:center;font-size:11px;font-family:var(--font-mono);color:var(--color-text-tertiary)}
+  .grid-row{display:flex;gap:3px;align-items:center}
+  .grid{display:flex;flex-direction:column;gap:3px}
+  .btn{padding:5px 12px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-secondary);font-size:12px;font-family:var(--font-mono);cursor:pointer;background:var(--color-background-primary);color:var(--color-text-primary);transition:all .15s}
+  .btn:hover{background:var(--color-background-secondary)}
+  .btn.on{background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info)}
+  .dbtn{padding:5px 14px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-secondary);font-size:13px;cursor:pointer;background:var(--color-background-primary);color:var(--color-text-secondary);transition:all .15s}
+  .dbtn.on{background:var(--color-background-info);color:var(--color-text-info);border-color:var(--color-border-info)}
+  .axbtn{padding:4px 10px;border-radius:var(--border-radius-md);border:0.5px solid var(--color-border-secondary);font-size:12px;cursor:pointer;background:var(--color-background-primary);color:var(--color-text-secondary);transition:all .15s}
+  .axbtn.on{background:var(--color-background-warning);color:var(--color-text-warning);border-color:var(--color-border-warning)}
+  .info{background:var(--color-background-secondary);border:0.5px solid var(--color-border-tertiary);border-radius:var(--border-radius-md);padding:10px 14px;font-size:12px;color:var(--color-text-secondary);font-family:var(--font-mono);line-height:1.7}
+  .info b{color:var(--color-text-primary);font-weight:500}
+  .btns{display:flex;gap:6px;flex-wrap:wrap;margin:10px 0 8px}
+  .label{font-size:12px;color:var(--color-text-secondary);margin-bottom:6px;font-family:var(--font-mono)}
+  .stitle{font-size:14px;font-weight:500;color:var(--color-text-primary);margin-bottom:3px}
+  .ssub{font-size:12px;color:var(--color-text-secondary);margin-bottom:12px}
+  .df-tbl{border-collapse:collapse;font-size:12px;font-family:var(--font-mono)}
+  .df-tbl th{background:var(--color-background-secondary);color:var(--color-text-secondary);font-weight:500;font-size:11px;padding:5px 10px;border:0.5px solid var(--color-border-tertiary);text-align:center}
+  .df-tbl td{padding:5px 10px;border:0.5px solid var(--color-border-tertiary);text-align:center;color:var(--color-text-primary)}
+  .arrow-h{font-size:20px;color:var(--color-text-tertiary);display:flex;align-items:center;padding:0 6px}
+  .stage-label{font-size:11px;color:var(--color-text-tertiary);font-family:var(--font-mono);margin-bottom:5px}
+  .r0{background:#E6F1FB;border-color:#85B7EB;color:#0C447C}
+  .r1{background:#EAF3DE;border-color:#97C459;color:#27500A}
+  .r2{background:#FAEEDA;border-color:#EF9F27;color:#633806}
+  .r3{background:#FBEAF0;border-color:#ED93B1;color:#72243E}
+  .res0{background:#B5D4F4;border-color:#378ADD;color:#042C53;font-weight:500}
+  .res1{background:#C0DD97;border-color:#639922;color:#173404;font-weight:500}
+  .res2{background:#FAC775;border-color:#BA7517;color:#412402;font-weight:500}
+  .res3{background:#F4C0D1;border-color:#D4537E;color:#4B1528;font-weight:500}
+  .cell.dim{opacity:.22}
+  select.btn { appearance: auto; }
+</style>
+</head>
+<body>
+
+<h1>NumPy Array Visualizer</h1>
+<p class="subtitle">Interactive explainer for 1D/2D arrays, functions, groupby, and pivot tables</p>
+
+<div class="tabs">
+  <div class="tab on" onclick="go('arrays')">Arrays</div>
+  <div class="tab" onclick="go('functions')">Functions</div>
+  <div class="tab" onclick="go('groupby')">groupby + agg</div>
+  <div class="tab" onclick="go('pivot')">pivot table</div>
+</div>
+
+<!-- ARRAYS -->
+<div class="sec on" id="s-arrays">
+  <div class="stitle">NumPy arrays</div>
+  <div class="ssub">Click any cell to inspect its index</div>
+  <div class="btns" style="margin-bottom:14px">
+    <div class="dbtn on" onclick="setArrDim(1,this)">1D</div>
+    <div class="dbtn" onclick="setArrDim(2,this)">2D</div>
+  </div>
+  <div id="arr-out"></div>
+  <div id="arr-info" style="margin-top:10px;display:none" class="info"></div>
+</div>
+
+<!-- FUNCTIONS -->
+<div class="sec" id="s-functions">
+  <div class="stitle">Apply functions to arrays</div>
+  <div class="ssub">Each row / column gets its own color so you can trace input → output</div>
+  <div class="btns" style="margin-bottom:14px">
+    <div class="dbtn on" onclick="setFnDim(1,this)">1D</div>
+    <div class="dbtn" onclick="setFnDim(2,this)">2D</div>
+  </div>
+  <div id="fn-out"></div>
+</div>
+
+<!-- GROUPBY -->
+<div class="sec" id="s-groupby">
+  <div class="stitle">groupby + agg</div>
+  <div class="ssub">Rows of the same group share a color through every stage</div>
+  <div class="btns" id="agg-btns"></div>
+  <div id="gb-out" style="overflow-x:auto;padding-bottom:6px"></div>
+  <div id="gb-info" class="info" style="margin-top:10px"></div>
+</div>
+
+<!-- PIVOT -->
+<div class="sec" id="s-pivot">
+  <div class="stitle">Pivot table</div>
+  <div class="ssub">Reshape long data into a wide cross-tabulation</div>
+  <div class="btns" style="margin-bottom:10px;align-items:center">
+    <span style="font-size:12px;color:var(--color-text-secondary)">values=</span>
+    <select class="btn" id="piv-val" onchange="renderPivot()" style="font-family:var(--font-mono);font-size:12px"><option>Sales</option><option>Units</option></select>
+    <span style="font-size:12px;color:var(--color-text-secondary);margin-left:6px">aggfunc=</span>
+    <select class="btn" id="piv-agg" onchange="renderPivot()" style="font-family:var(--font-mono);font-size:12px"><option>sum</option><option>mean</option><option>max</option><option>count</option></select>
+  </div>
+  <div style="overflow-x:auto" id="piv-out"></div>
+  <div id="piv-info" class="info" style="margin-top:10px"></div>
+</div>
+
+<script>
+const A1=[3,7,2,9,4,6];
+const A2=[[3,7,2],[9,4,6],[1,8,5],[4,2,7]];
+let arrDim=1,fnDim=1,curFn='sum',curAxis=0,curAgg='sum',selCell=null;
+const ROW_CLS=['r0','r1','r2','r3'];
+const RES_CLS=['res0','res1','res2','res3'];
+
+function go(t){
+  document.querySelectorAll('.tab').forEach((el,i)=>el.classList.toggle('on',['arrays','functions','groupby','pivot'][i]===t));
+  document.querySelectorAll('.sec').forEach(el=>el.classList.remove('on'));
+  document.getElementById('s-'+t).classList.add('on');
+  ({arrays:renderArr,functions:renderFn,groupby:renderGroupby,pivot:renderPivot})[t]();
+}
+
+function setArrDim(d,btn){
+  arrDim=d;selCell=null;
+  btn.parentElement.querySelectorAll('.dbtn').forEach((b,i)=>b.classList.toggle('on',i+1===d));
+  document.getElementById('arr-info').style.display='none';
+  renderArr();
+}
+function renderArr(){
+  const el=document.getElementById('arr-out');
+  if(arrDim===1){
+    let h=`<div class="label">a = np.array([${A1.join(', ')}])</div><div class="grid">`;
+    h+=`<div class="grid-row"><div class="idx"></div>`;
+    A1.forEach((_,i)=>{ h+=`<div class="idx" style="width:44px">${i}</div>`; });
+    h+=`</div><div class="grid-row"><div class="idx">0</div>`;
+    A1.forEach((v,i)=>{ h+=`<div class="cell${selCell===i?' sel':''}" onclick="selArr1(${i})">${v}</div>`; });
+    h+=`</div></div><div style="margin-top:8px;font-size:12px;color:var(--color-text-secondary)">shape <span style="font-family:var(--font-mono)">(6,)</span> &nbsp;•&nbsp; ndim 1</div>`;
+    el.innerHTML=h;
+  } else {
+    let h=`<div class="label">a = np.array([[3,7,2],[9,4,6],[1,8,5],[4,2,7]])</div><div class="grid">`;
+    h+=`<div class="grid-row"><div class="idx"></div><div class="idx"></div>`;
+    [0,1,2].forEach(j=>{ h+=`<div class="idx" style="width:44px">${j}</div>`; });
+    h+=`</div>`;
+    A2.forEach((row,i)=>{
+      h+=`<div class="grid-row"><div class="idx">${i}</div><div class="idx"></div>`;
+      row.forEach((v,j)=>{
+        const s=selCell&&selCell[0]===i&&selCell[1]===j;
+        h+=`<div class="cell${s?' sel':''}" onclick="selArr2(${i},${j})">${v}</div>`;
+      });
+      h+=`</div>`;
+    });
+    h+=`</div><div style="margin-top:8px;font-size:12px;color:var(--color-text-secondary)">shape <span style="font-family:var(--font-mono)">(4,3)</span> &nbsp;•&nbsp; ndim 2</div>`;
+    el.innerHTML=h;
+  }
+}
+function selArr1(i){selCell=i;renderArr();const el=document.getElementById('arr-info');el.style.display='block';el.innerHTML=`<b>a[${i}]</b> = ${A1[i]}&nbsp;&nbsp;•&nbsp;&nbsp;negative index: <b>a[${i-A1.length}]</b>`;}
+function selArr2(i,j){selCell=[i,j];renderArr();const el=document.getElementById('arr-info');el.style.display='block';el.innerHTML=`<b>a[${i}, ${j}]</b> = ${A2[i][j]}&nbsp;&nbsp;•&nbsp;&nbsp;row ${i}, col ${j}`;}
+
+const FNS1={
+  sum:{f:a=>a.reduce((s,v)=>s+v,0),code:'np.sum(a)'},
+  mean:{f:a=>+(a.reduce((s,v)=>s+v,0)/a.length).toFixed(2),code:'np.mean(a)'},
+  max:{f:a=>Math.max(...a),code:'np.max(a)'},
+  min:{f:a=>Math.min(...a),code:'np.min(a)'},
+  std:{f:a=>+(Math.sqrt(a.map(v=>v-a.reduce((s,x)=>s+x,0)/a.length).reduce((s,v)=>s+v*v,0)/a.length)).toFixed(2),code:'np.std(a)'},
+  cumsum:{f:a=>{let s=0;return a.map(v=>(s+=v));},code:'np.cumsum(a)'},
+  sort:{f:a=>[...a].sort((x,y)=>x-y),code:'np.sort(a)'},
+};
+const FNS2={
+  sum:{f:(a,ax)=>agg2(a,ax,r=>r.reduce((s,v)=>s+v,0)),code:(ax)=>`np.sum(a, axis=${ax===-1?'None':ax})`},
+  mean:{f:(a,ax)=>agg2(a,ax,r=>+(r.reduce((s,v)=>s+v,0)/r.length).toFixed(2)),code:(ax)=>`np.mean(a, axis=${ax===-1?'None':ax})`},
+  max:{f:(a,ax)=>agg2(a,ax,r=>Math.max(...r)),code:(ax)=>`np.max(a, axis=${ax===-1?'None':ax})`},
+  min:{f:(a,ax)=>agg2(a,ax,r=>Math.min(...r)),code:(ax)=>`np.min(a, axis=${ax===-1?'None':ax})`},
+  T:{f:(a)=>a[0].map((_,j)=>a.map(r=>r[j])),code:()=>'a.T',noAxis:true},
+  cumsum:{f:(a,ax)=>cum2(a,ax),code:(ax)=>`np.cumsum(a, axis=${ax===-1?'None':ax})`},
+};
+function agg2(a,ax,f){
+  if(ax===-1) return f(a.flat());
+  if(ax===0) return a[0].map((_,j)=>f(a.map(r=>r[j])));
+  return a.map(r=>f(r));
+}
+function cum2(a,ax){
+  if(ax===1) return a.map(row=>{let s=0;return row.map(v=>(s+=v));});
+  return a[0].map((_,j)=>{let s=0;return a.map(r=>(s+=r[j]));})
+    .reduce((acc,col)=>{col.forEach((v,i)=>{acc[i]=acc[i]||[];acc[i].push(v);});return acc;},[]);
+}
+function setFnDim(d,btn){fnDim=d;curFn='sum';curAxis=0;btn.parentElement.querySelectorAll('.dbtn').forEach((b,i)=>b.classList.toggle('on',i+1===d));renderFn();}
+function setFnBtn(f){curFn=f;renderFn();}
+function setAxis(a){curAxis=a;renderFn();}
+
+function renderFn(){
+  const el=document.getElementById('fn-out');
+  const fns=fnDim===1?FNS1:FNS2;
+  let h=`<div class="btns">`;
+  Object.keys(fns).forEach(k=>{ h+=`<div class="btn${k===curFn?' on':''}" onclick="setFnBtn('${k}')">${k}</div>`; });
+  h+=`</div>`;
+  if(fnDim===2 && !fns[curFn]?.noAxis){
+    h+=`<div class="btns" style="align-items:center;margin-bottom:14px">`;
+    h+=`<span style="font-size:12px;color:var(--color-text-secondary);margin-right:2px">axis=</span>`;
+    [[0,'0 — collapse rows'],[1,'1 — collapse cols'],[-1,'None — collapse all']].forEach(([v,label])=>{
+      h+=`<div class="axbtn${curAxis===v?' on':''}" onclick="setAxis(${v})">${label}</div>`;
+    });
+    h+=`</div>`;
+  }
+  if(fnDim===1){
+    const res=FNS1[curFn].f(A1);
+    h+=`<div class="label">${FNS1[curFn].code}</div>`;
+    h+=`<div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap">`;
+    h+=`<div class="grid"><div class="grid-row">`;
+    A1.forEach(v=>{ h+=`<div class="cell r0">${v}</div>`; });
+    h+=`</div></div><div style="font-size:18px;color:var(--color-text-tertiary)">→</div>`;
+    if(Array.isArray(res)){
+      h+=`<div class="grid"><div class="grid-row">`;
+      res.forEach(v=>{ h+=`<div class="cell res0">${v}</div>`; });
+      h+=`</div></div>`;
+    } else {
+      h+=`<div class="cell res0" style="width:52px;height:40px;font-size:15px">${res}</div>`;
+    }
+    h+=`</div>`;
+  } else {
+    const fn=FNS2[curFn];
+    const noAxis=fn.noAxis;
+    const result=noAxis?fn.f(A2):fn.f(A2,curAxis);
+    const code=typeof fn.code==='function'?fn.code(curAxis):fn.code;
+    const nRows=A2.length,nCols=A2[0].length;
+    h+=`<div class="label">${code}</div>`;
+    if(noAxis){
+      h+=`<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap">`;
+      h+=`<div class="grid">`;
+      A2.forEach((row,i)=>{ h+=`<div class="grid-row">`; row.forEach(v=>{ h+=`<div class="cell ${ROW_CLS[i]}">${v}</div>`; }); h+=`</div>`; });
+      h+=`</div><div style="font-size:18px;color:var(--color-text-tertiary)">→</div><div class="grid">`;
+      result.forEach((row,i)=>{ h+=`<div class="grid-row">`; row.forEach((v,j)=>{ h+=`<div class="cell ${ROW_CLS[j]}">${v}</div>`; }); h+=`</div>`; });
+      h+=`</div></div>`;
+    } else if(curAxis===0){
+      h+=`<div style="display:inline-flex;flex-direction:column;gap:4px;align-items:flex-start">`;
+      h+=`<div class="grid-row">`;
+      [0,1,2].forEach(j=>{ h+=`<div style="width:44px;text-align:center;font-size:11px;font-family:var(--font-mono);color:var(--color-text-tertiary)">${j}</div>`; });
+      h+=`</div><div class="grid">`;
+      A2.forEach((row,i)=>{ h+=`<div class="grid-row">`; row.forEach((v,j)=>{ h+=`<div class="cell ${ROW_CLS[j]}">${v}</div>`; }); h+=`</div>`; });
+      h+=`</div><div style="font-size:11px;color:var(--color-text-warning);font-family:var(--font-mono);margin:3px 0 3px 2px">↓ collapse rows</div><div class="grid-row">`;
+      (Array.isArray(result)?result:[result]).forEach((v,j)=>{ h+=`<div class="cell ${RES_CLS[j]}">${v}</div>`; });
+      h+=`</div><div style="font-size:11px;color:var(--color-text-tertiary);font-family:var(--font-mono);margin-top:3px">shape: (${nCols},)</div></div>`;
+    } else if(curAxis===1){
+      h+=`<div style="display:inline-flex;flex-direction:column;gap:3px">`;
+      h+=`<div style="font-size:11px;color:var(--color-text-tertiary);font-family:var(--font-mono);margin-bottom:3px">input (${nRows}×${nCols}) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ collapse cols</div>`;
+      A2.forEach((row,i)=>{
+        h+=`<div class="grid-row">`;
+        row.forEach(v=>{ h+=`<div class="cell ${ROW_CLS[i]}">${v}</div>`; });
+        h+=`<div style="font-size:14px;color:var(--color-text-warning);padding:0 8px">→</div>`;
+        const rv=Array.isArray(result)?result[i]:result;
+        h+=`<div class="cell ${RES_CLS[i]}">${rv}</div></div>`;
+      });
+      h+=`<div style="font-size:11px;color:var(--color-text-tertiary);font-family:var(--font-mono);margin-top:4px">shape: (${nRows},)</div></div>`;
+    } else {
+      h+=`<div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap"><div class="grid">`;
+      A2.forEach(row=>{ h+=`<div class="grid-row">`; row.forEach(v=>{ h+=`<div class="cell r0">${v}</div>`; }); h+=`</div>`; });
+      h+=`</div><div style="font-size:18px;color:var(--color-text-tertiary)">→</div>`;
+      h+=`<div class="cell res0" style="width:52px;height:40px;font-size:15px">${result}</div></div>`;
+      h+=`<div style="font-size:11px;color:var(--color-text-tertiary);font-family:var(--font-mono);margin-top:6px">shape: scalar</div>`;
+    }
+  }
+  el.innerHTML=h;
+}
+
+const CATS=['A','B','C'];
+const CAT_IDX={A:0,B:1,C:2};
+const DF=[
+  {Cat:'A',Reg:'N',Sales:120,Units:5},{Cat:'A',Reg:'S',Sales:200,Units:8},{Cat:'A',Reg:'E',Sales:85,Units:4},
+  {Cat:'B',Reg:'N',Sales:150,Units:6},{Cat:'B',Reg:'S',Sales:90,Units:3},{Cat:'B',Reg:'E',Sales:210,Units:9},
+  {Cat:'C',Reg:'N',Sales:300,Units:12},{Cat:'C',Reg:'S',Sales:175,Units:7},{Cat:'C',Reg:'E',Sales:130,Units:5},
+];
+const AGGFNS={
+  sum:{f:v=>v.reduce((s,x)=>s+x,0),desc:'Total across each group'},
+  mean:{f:v=>+(v.reduce((s,x)=>s+x,0)/v.length).toFixed(1),desc:'Average per group'},
+  max:{f:v=>Math.max(...v),desc:'Largest value per group'},
+  min:{f:v=>Math.min(...v),desc:'Smallest value per group'},
+  count:{f:v=>v.length,desc:'Number of rows per group'},
+};
+const CAT_STYLES=['background:#E6F1FB;border:0.5px solid #85B7EB;color:#0C447C','background:#EAF3DE;border:0.5px solid #97C459;color:#27500A','background:#FAEEDA;border:0.5px solid #EF9F27;color:#633806'];
+const RES_STYLES=['background:#B5D4F4;border:0.5px solid #378ADD;color:#042C53','background:#C0DD97;border:0.5px solid #639922;color:#173404','background:#FAC775;border:0.5px solid #BA7517;color:#412402'];
+
+function dfTbl(headers,rows){
+  let h=`<table class="df-tbl"><thead><tr>`;
+  headers.forEach(hd=>{ h+=`<th>${hd}</th>`; });
+  h+=`</tr></thead><tbody>`;
+  rows.forEach(r=>{
+    const ci=CAT_IDX[r[0]];
+    const bg=['#E6F1FB44','#EAF3DE44','#FAEEDA44'][ci];
+    const txtCls=['ka','kb','kc'][ci];
+    h+=`<tr style="background:${bg}"><td class="${txtCls}">${r[0]}</td>`;
+    r.slice(1).forEach(cell=>{ h+=`<td>${cell}</td>`; });
+    h+=`</tr>`;
+  });
+  h+=`</tbody></table>`;
+  return h;
+}
+
+function renderGroupby(){
+  document.getElementById('agg-btns').innerHTML=Object.keys(AGGFNS).map(k=>`<div class="btn${k===curAgg?' on':''}" onclick="selAgg('${k}')">.${k}()</div>`).join('');
+  buildGb();
+}
+function selAgg(a){curAgg=a;document.querySelectorAll('#agg-btns .btn').forEach(b=>b.classList.toggle('on',b.textContent==='.'+a+'()'));buildGb();}
+
+function buildGb(){
+  const fn=AGGFNS[curAgg];
+  const groups={A:DF.filter(d=>d.Cat==='A'),B:DF.filter(d=>d.Cat==='B'),C:DF.filter(d=>d.Cat==='C')};
+  let s1=`<div style="display:flex;flex-direction:column"><div class="stage-label">① df</div>`;
+  s1+=dfTbl(['Cat','Reg','Sales'],DF.map(r=>[r.Cat,r.Reg,r.Sales]));
+  s1+=`</div>`;
+  let s2=`<div style="display:flex;flex-direction:column"><div class="stage-label">② groups</div>`;
+  CATS.forEach((cat,ci)=>{
+    const rows=groups[cat];
+    const bg=['#E6F1FB44','#EAF3DE44','#FAEEDA44'][ci];
+    const txtCls=['ka','kb','kc'][ci];
+    s2+=`<div style="margin-bottom:${ci<2?'4px':'0'}"><table class="df-tbl"><tbody>`;
+    rows.forEach(r=>{ s2+=`<tr style="background:${bg}"><td class="${txtCls}">${r.Cat}</td><td>${r.Sales}</td></tr>`; });
+    s2+=`</tbody></table></div>`;
+  });
+  s2+=`</div>`;
+  let s3=`<div style="display:flex;flex-direction:column"><div class="stage-label">③ .${curAgg}()</div>`;
+  CATS.forEach((cat,ci)=>{
+    const vals=groups[cat].map(r=>r.Sales);
+    s3+=`<div style="margin-bottom:${ci<2?'4px':'0'}"><table class="df-tbl"><tbody>`;
+    vals.forEach(v=>{ s3+=`<tr style="${CAT_STYLES[ci]}"><td style="color:inherit;font-weight:inherit">${v}</td></tr>`; });
+    s3+=`</tbody></table></div>`;
+  });
+  s3+=`</div>`;
+  let s3r=`<div style="display:flex;flex-direction:column"><div class="stage-label">&nbsp;</div>`;
+  CATS.forEach((cat,ci)=>{
+    const vals=groups[cat].map(r=>r.Sales);
+    const res=fn.f(vals);
+    const nRows=vals.length,rowH=28,mid=Math.floor((nRows-1)/2);
+    s3r+=`<div style="display:flex;flex-direction:column;gap:0;margin-bottom:${ci<2?'4px':'0'}">`;
+    for(let r=0;r<nRows;r++){
+      if(r===mid){
+        s3r+=`<div style="height:${rowH}px;display:flex;align-items:center;gap:4px"><span style="font-size:13px;color:var(--color-text-tertiary);padding:0 4px">→</span><div style="${RES_STYLES[ci]};border-radius:5px;padding:2px 10px;font-family:var(--font-mono);font-size:12px;font-weight:500">${res}</div></div>`;
+      } else {
+        s3r+=`<div style="height:${rowH}px"></div>`;
+      }
+    }
+    s3r+=`</div>`;
+  });
+  s3r+=`</div>`;
+  let s4=`<div style="display:flex;flex-direction:column"><div class="stage-label">④ result</div>`;
+  s4+=dfTbl(['Cat','Sales'],CATS.map(cat=>[cat,fn.f(groups[cat].map(r=>r.Sales))]));
+  s4+=`</div>`;
+  const arr=`<div class="arrow-h">→</div>`;
+  document.getElementById('gb-out').innerHTML=`<div style="display:flex;align-items:flex-start;gap:4px">${s1}${arr}${s2}${arr}${s3}${s3r}${arr}${s4}</div>`;
+  document.getElementById('gb-info').innerHTML=`<b>.groupby('Cat')['Sales'].${curAgg}()</b> — ${fn.desc}`;
+}
+
+function renderPivot(){
+  const val=document.getElementById('piv-val').value;
+  const aggName=document.getElementById('piv-agg').value;
+  const fn=AGGFNS[aggName].f;
+  const cats=['A','B','C'],regs=['N','S','E'];
+  let src=`<div><div class="stage-label">① source df</div>`;
+  src+=dfTbl(['Cat','Reg',val],DF.map(r=>[r.Cat,r.Reg,r[val]]));
+  src+=`</div>`;
+  let pvt=`<div><div class="stage-label">② pivot_table</div><table class="df-tbl"><thead><tr><th>Cat</th>`;
+  regs.forEach(r=>{ pvt+=`<th>${r}</th>`; });
+  pvt+=`</tr></thead><tbody>`;
+  cats.forEach((cat,ci)=>{
+    const bg=['#E6F1FB44','#EAF3DE44','#FAEEDA44'][ci];
+    const txtCls=['ka','kb','kc'][ci];
+    pvt+=`<tr style="background:${bg}"><td class="${txtCls}">${cat}</td>`;
+    regs.forEach(reg=>{
+      const vals=DF.filter(d=>d.Cat===cat&&d.Reg===reg).map(d=>d[val]);
+      pvt+=`<td>${vals.length?fn(vals):'—'}</td>`;
+    });
+    pvt+=`</tr>`;
+  });
+  pvt+=`</tbody></table></div>`;
+  document.getElementById('piv-out').innerHTML=`<div style="display:flex;align-items:flex-start;gap:8px">${src}<div class="arrow-h">→</div>${pvt}</div>`;
+  document.getElementById('piv-info').innerHTML=`<b>pd.pivot_table(df, values='${val}', index='Cat', columns='Reg', aggfunc='${aggName}')</b>`;
+}
+
+// CSS for groupby category text colors (needed in standalone)
+const styleEl=document.createElement('style');
+styleEl.textContent=`.ka{color:#0C447C;font-weight:500}.kb{color:#27500A;font-weight:500}.kc{color:#633806;font-weight:500}`;
+document.head.appendChild(styleEl);
+
+renderArr();renderFn();renderGroupby();renderPivot();
+</script>
+</body>
+</html>
