@@ -1,0 +1,12 @@
+[project]
+name = "iese-dsfb-mim"
+version = "0.1.0"
+description = "IESE Data Science for Business MiM"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.4.4",
+    "opencv-python>=4.13.0.92",
+    "pandas>=3.0.2",
+    "seaborn>=0.13.2",
+]

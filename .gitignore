@@ -178,3 +178,7 @@ cython_debug/
 
 
 *-in-class.ipynb
+.python-version
+to_pdf.sh
+uv.lock
+.venv
