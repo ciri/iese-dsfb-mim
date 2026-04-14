@@ -182,3 +182,5 @@ cython_debug/
 to_pdf.sh
 uv.lock
 .venv
+
+pdf/annotated
