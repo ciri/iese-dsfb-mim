@@ -178,6 +178,8 @@ cython_debug/
 
 
 *-in-class.ipynb
+*-bck.ipynb
+
 .python-version
 to_pdf.sh
 uv.lock

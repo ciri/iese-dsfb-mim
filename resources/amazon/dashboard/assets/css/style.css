@@ -1,243 +1,350 @@
-/* assets/styles.css */
+/* Amazon Seller Analytics — Dashboard CSS */
 
-/* Titles and subtitles */
+/* ─── Typography scale ─────────────────────────────────────── */
 .title {
-    font-size: 28px;
-    color: #3a4552;
-}
-
-.subtitle-medium {
     font-size: 24px;
-    color: #3a4552;
+    font-weight: 600;
+    color: #232F3E;
 }
-
-.subtitle-small {
-    font-size: 16px;
-    color: #3a4552;
-}
-
-.subtitle-small-color {
+.subtitle-medium {
     font-size: 18px;
-    color: #803f0c;
+    font-weight: 500;
+    color: #232F3E;
 }
-
+.subtitle-small {
+    font-size: 14px;
+    color: #545B64;
+}
+.subtitle-small-color {
+    font-size: 15px;
+    font-weight: 600;
+    color: #FF9900;
+}
 .subtitle-sidebar {
-    font-size: 12px;
-    color: #3a4552;
+    font-size: 11px;
+    color: #8d9db2;
+    line-height: 1.8;
 }
-
 .subtitle-sidebar a {
-    color: #3a4552;
-    font-weight: bold;
+    color: #aab4be;
+    font-weight: 500;
     text-decoration: none;
 }
-
 .subtitle-sidebar a:hover {
-    color: #f79500;
+    color: #FF9900;
 }
 
-/* Body */
+/* ─── Base ─────────────────────────────────────────────────── */
 body {
     font-family: 'Inter', sans-serif;
-    background-color: #f5f5f5;
-    margin-left: 16.3rem;
-    margin-right: 8px;
-    margin-top: 2rem;
-
+    background-color: #EAEDED;
+    margin-left: 220px;
+    margin-right: 0;
+    margin-top: 0;
+    padding-top: 0;
 }
 
-/* Content */
-.content {
-    margin-left: calc(16.3rem + 1rem);
-    margin-right: 1rem;
-    padding: 1rem;
-    background-color: #f5f5f5;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-/* Sidebar */
+/* ─── Sidebar ──────────────────────────────────────────────── */
 .sidebar {
     position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
-    width: 16rem;
-    padding: 1rem 1rem;
-    background-color: #fff;
-}
-
-@media (max-width: 768px) {
-
-    .sidebar {
-        width: 12rem;
-    }
-
-    .content {
-        margin-left: calc(12rem + 1rem);
-    }
+    width: 220px;
+    background-color: #232F3E;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    z-index: 100;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .sidebar-logo {
-    margin-top: 1rem;
-    display: flex;
-
+    padding: 20px 18px 18px;
+    border-bottom: 1px solid #37475A;
+    margin: 0 !important;
 }
-
 .sidebar-logo img {
-    height: 40px;
+    height: 34px;
     width: auto;
+    filter: brightness(0) invert(1);
 }
 
+.sidebar-section-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    color: #8d9db2;
+    padding: 20px 18px 8px;
+}
+
+/* ─── Navigation pills ─────────────────────────────────────── */
 .nav-pills .nav-link {
-    color: #3a4552;
+    color: #BFC9D3;
+    border-radius: 0;
+    padding: 10px 18px;
+    font-size: 13.5px;
+    font-weight: 400;
+    border-left: 3px solid transparent;
+    transition: all 0.15s ease;
+    display: flex;
+    align-items: center;
 }
-
-.nav-pills .nav-link.active {
-    color: #3a4552;
-    background-color: #ececec;
-}
-
-/* Cards */
-.card {
-    border: 1px solid #fff;
-    border-radius: 8px;
-    text-align: left;
-    box-shadow: 0 6px 8px rgba(89, 87, 87, 0.1);
-}
-
-.card-body {
-    padding: 25px;
-    color: #3a4552;
-}
-
-.card-icon {
-    font-size: 30px;
-    margin-right: 20px;
-    margin-bottom: 15px;
-    color: #f79500;
-}
-
-.card-title {
-    white-space: nowrap;
-    font-size: 20px;
-}
-
-/* Cards charts */
-.chart-card {
-    border: 2px solid #fff;
-    border-radius: 8px;
-    box-shadow: 0 6px 8px rgba(89, 87, 87, 0.1);
-}
-
-/* Dropdown */
-.custom-dropdown {
-    color: #3a4552;
-    background-color: #ececec;
-}
-
-.custom-dropdown .VirtualizedSelectOption:hover {
-    background-color: #ececec;
-    color: #3a4552;
-}
-
-.custom-dropdown .Select-control:focus-within {
-    border-color: #aaa;
-    box-shadow: none;
-}
-
-/* Placeholder */
-.search-input {
-    width: 60%;
-    height: 45px;
-    color: #3a4552;
-    border: 1px solid #f79500;
-    border-radius: 5px;
-    padding: 15px;
-}
-
-/* Button */
-.btn-custom {
-    background-color: #f79500;
+.nav-pills .nav-link:hover {
     color: #fff;
-    width: 120px;
-    text-align: center;
-    border: 1px solid #f79500;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: #37475A;
+    border-left-color: #FF9900;
+}
+.nav-pills .nav-link.active {
+    color: #FF9900;
+    background-color: #37475A;
+    border-left: 3px solid #FF9900;
+    font-weight: 600;
+}
+.nav-pills .nav-link i {
+    width: 18px;
+}
+
+/* ─── Sidebar footer ───────────────────────────────────────── */
+.sidebar-footer {
+    margin-top: auto;
+    padding: 16px 18px 20px;
+    border-top: 1px solid #37475A;
+}
+
+/* ─── Page top header ──────────────────────────────────────── */
+.page-topbar {
+    background-color: #37475A;
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #232F3E;
+}
+.page-topbar-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #FF9900;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+/* ─── Content area ─────────────────────────────────────────── */
+.container-fluid {
+    padding: 24px 28px;
+}
+
+/* ─── Cards ────────────────────────────────────────────────── */
+.card {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+}
+.card-body {
+    padding: 20px 22px;
+    color: #232F3E;
+}
+
+/* Metric KPI cards */
+.metric-card {
+    border-left: 4px solid #FF9900;
+    border-radius: 6px;
+}
+.metric-card .card-title {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
+    color: #545B64;
+    margin-bottom: 8px;
+    white-space: nowrap;
+}
+.metric-card .card-value {
+    font-size: 26px;
+    font-weight: 700;
+    color: #232F3E;
+    line-height: 1.1;
+}
+.metric-card .card-icon {
+    font-size: 20px;
+    color: #FF9900;
+    margin-bottom: 10px;
+}
+
+/* Chart cards */
+.chart-card {
+    border: none;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    padding: 18px 20px 8px;
+}
+.chart-card-title {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    color: #545B64;
+    margin-bottom: 2px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #F2F3F3;
+}
+
+/* ─── Dropdown ─────────────────────────────────────────────── */
+.custom-dropdown {
+    color: #232F3E;
+    background-color: #fff;
+}
+.Select-control {
+    border-color: #D5D9D9 !important;
+    border-radius: 4px !important;
+}
+/* Fix dropdown menu getting clipped by Bootstrap containers */
+.Select-menu-outer {
+    z-index: 9999 !important;
+}
+.VirtualizedSelectOption {
+    z-index: 9999 !important;
+}
+.dash-dropdown {
+    z-index: 1050;
+    position: relative;
+}
+
+.search-input {
+    height: 38px;
+    color: #232F3E;
+    border: 1px solid #D5D9D9;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    background-color: #fff;
+    width: 100%;
+}
+.search-input:focus {
+    border-color: #FF9900;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(255, 153, 0, 0.2);
+}
+
+/* ─── Button ───────────────────────────────────────────────── */
+.btn-custom {
+    background-color: #FF9900;
+    color: #111;
+    font-weight: 600;
+    border: 1px solid #e88a00;
+    padding: 8px 18px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.15s ease;
+}
+.btn-custom:hover {
+    background-color: #e88a00;
 }
 
-.user-info-text {
+/* ─── Table ────────────────────────────────────────────────── */
+.table {
+    font-size: 13.5px;
+    color: #232F3E;
+    margin-bottom: 0;
+}
+.table thead th {
+    background-color: #F2F3F3;
+    color: #545B64;
+    font-weight: 700;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    border-bottom: 2px solid #E3E6E6;
+    border-top: none;
+    padding: 10px 12px;
+}
+.table td {
+    border-color: #E3E6E6 !important;
+    vertical-align: middle;
+    padding: 9px 12px;
+}
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #F9FAFB;
+}
+.table-hover tbody tr:hover {
+    background-color: #FFF8EE;
+}
+
+/* Dash tables */
+.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th {
     font-family: Inter, sans-serif;
-    font-size: 16px;
-    color: #3a4552;
-    margin-bottom: 1px;
-    margin-top: 1px;
+    background-color: #F2F3F3;
+    color: #545B64 !important;
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 700;
 }
-
-/* Table */
-.dash-table-container .dash-spreadsheet-container .dash-spreadsheet-inner th.dash-filter input.dash-filter--case--sensitive {
-    font-family: Inter, sans-serif;
-    color: #3a4552 !important;
-    border-color: #3a4552 !important;
-}
-
 .dash-spreadsheet-container table {
-    --border-color: #3a4552 !important;
-    --accent: #3a4552 !important;
-    --selected-background: #3a4552 !important;
-    --selected-color: #3a4552 !important;
+    --border-color: #E3E6E6 !important;
+    --accent: #FF9900 !important;
 }
-
 .dash-table-container .previous-next-container {
     font-size: 13px;
     text-align: right;
-    padding: 5px 0px;
-    color: #3a4552 !important;
+    padding: 5px 0;
+    color: #545B64 !important;
 }
 
-.svg-inline--fa.fa-w-14 {
-    width: 0.875em;
-    color: #3a4552 !important;
-
+/* ─── Misc ─────────────────────────────────────────────────── */
+.user-info-text {
+    font-size: 14px;
+    color: #545B64;
 }
-
-/* Text danger */
 .text-danger {
-    font-family: Inter, sans-serif;
-    font-size: 16px;
-    color: #f41800;
-    padding: 1px;
-
+    font-size: 14px;
+    color: #CC0C39;
 }
-
-/* Text recommendation */
 .text-recommendations {
-    font-family: Inter, sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     text-align: left;
     white-space: pre-wrap;
-    color: #333333;
+    color: #232F3E;
     background-color: #fff;
-    padding: 25px;
-    border: 1px solid #fff;
-    border-radius: 8px;
-    box-shadow: 0 6px 8px rgba(89, 87, 87, 0.1);
+    padding: 20px 22px;
+    border-radius: 6px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    line-height: 1.7;
 }
 
-/* Tooltip */
+/* ─── Tooltip ──────────────────────────────────────────────── */
 .tooltip-inner {
     max-width: 300px;
-    background-color: #211F1F;
-    font-family: Inter, sans-serif;
-    font-size: 14px;
+    background-color: #232F3E;
+    font-size: 13px;
     color: #fff;
-    padding: 3px;
+    padding: 6px 10px;
+    border-radius: 4px;
 }
-
 .bs-tooltip-end .tooltip-arrow::before,
 .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before {
-    border-right-color: #211F1F;
+    border-right-color: #232F3E;
+}
+
+/* ─── Responsive ───────────────────────────────────────────── */
+@media (max-width: 992px) {
+    .sidebar {
+        width: 180px;
+    }
+    body {
+        margin-left: 180px;
+    }
+}
+@media (max-width: 768px) {
+    .sidebar {
+        width: 0;
+        overflow: hidden;
+    }
+    body {
+        margin-left: 0;
+    }
 }
