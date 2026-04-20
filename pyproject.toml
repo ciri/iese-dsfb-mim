@@ -5,8 +5,16 @@ description = "IESE Data Science for Business MiM"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
+    "google>=3.0.0",
+    "google-genai>=1.73.1",
+    "nltk>=3.9.4",
     "numpy>=2.4.4",
     "opencv-python>=4.13.0.92",
     "pandas>=3.0.2",
+    "pip>=26.0.1",
     "seaborn>=0.13.2",
+    "tokenizers>=0.22",
+    "torch>=2.11.0",
+    "transformers>=5.0.0",
+    "wordcloud>=1.9.6",
 ]
