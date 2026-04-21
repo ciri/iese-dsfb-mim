@@ -181,7 +181,6 @@ cython_debug/
 *-bck.ipynb
 
 .python-version
-to_pdf.sh
 uv.lock
 .venv
 
